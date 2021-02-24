@@ -2,43 +2,43 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import re
+from Lib import count_character, count_word, count_most
 
+
+# 获取输入输出文件名
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 
-# 打开输入文件
+
+# 数据初始化
 characters = 0
 words = 0
 lines = 0
 count = {}
-with open(input_file, encoding='utf-8') as f:
+
+# 打开输入文件
+with open(input_file, encoding='utf-8', newline='') as f:
     for line in f:
         line = line.lower()
 
-        character_num = len([i for i in list(line) if ord(i) <= 127])
-        characters += character_num
+        # 统计每行字符数
+        characters += count_character(line)
 
+        # 统计非空白行数
         if not line.isspace():
             lines += 1
 
-        word = re.split(r'[^a-z0-9]', line)
-        pattern = re.compile(r'[a-z]{4}[a-z0-9]*')
-        for w in word:
-            if re.match(pattern, w):
-                words += 1
-                if w in count:
-                    count[w] += 1
-                else:
-                    count[w] = 1
+        # 统计每行单词数
+        words += count_word(line, count)
 
 
 # 打开输出文件
-with open(output_file, 'w', encoding='utf-8') as f:
+with open(output_file, 'w', encoding='utf-8', newline='') as f:
     f.write("characters: {0}\n".format(characters))
     f.write("words: {0}\n".format(words))
     f.write("lines: {0}\n".format(lines))
 
-    count = sorted(count.items(), key=lambda x: (-x[1], x[0]))
-    for k, v in count[:10]:
+    # 输出最多的10个单词及其词频
+    result = count_most(count)
+    for k, v in result.items():
         f.write("{0}: {1}\n".format(k, v))
