@@ -1,2 +1,5 @@
 *.txt
 #过滤所有.txt文件
+
+/__pycache__/
+#过滤整个__pycache__文件夹
