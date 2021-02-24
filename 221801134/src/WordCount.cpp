@@ -1,12 +1,20 @@
 #include<iostream>
 #include<fstream>
+#include<cstdlib>
 #include<cstring>
 #include<map>
+#include<vector>
 #include<algorithm>
 using namespace std;
 ifstream infile; 
 ofstream outfile;
 map<string,int> mword;
+
+bool cmp(const pair<string,int>& a,const pair<string,int>& b) {
+    if(a.second!=b.second)
+		return a.second>b.second;
+	return a.first<b.first;
+}
 
 //打开输入文件 
 void openInFile(char in[]){
@@ -92,6 +100,22 @@ void getLines(){
 	outfile<<"lines:"<<count<<"\n";
 }
 
+//统计文件中各单词的出现次数（对应输出接下来10行）
+void getWordsNum(){
+	int numbers=0;
+    
+    vector< pair<string, int> > vec(mword.begin(),mword.end());
+    //对线性的vector进行排序
+    sort(vec.begin(),vec.end(),cmp);
+    int len=10;
+    if(vec.size()<10)	
+		len=vec.size();
+    for(int i=0;i<len;i++){
+    	//cout<<vec[i].first<<" : "<<vec[i].second<<endl;
+    	outfile<<vec[i].first<<":"<<vec[i].second<<"\n";
+	}
+}
+
 int main(int agrs,char* arg[]){
 	//cout<<arg[1]<<endl<<arg[2]<<endl;
 	
@@ -100,4 +124,5 @@ int main(int agrs,char* arg[]){
 	getCharacters();//统计文件的字符数（对应输出第一行）
 	getWords();//统计文件的单词总数（对应输出第二行）
 	getLines();//统计文件的有效行数（对应输出第三行）
+	getWordsNum();//统计文件中各单词的出现次数（对应输出接下来10行）
 }
