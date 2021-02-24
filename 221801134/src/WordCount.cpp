@@ -1,9 +1,12 @@
 #include<iostream>
 #include<fstream>
+#include<cstring>
+#include<map>
 #include<algorithm>
 using namespace std;
 ifstream infile; 
 ofstream outfile;
+map<string,int> mword;
 
 //打开输入文件 
 void openInFile(char in[]){
@@ -40,10 +43,44 @@ void getCharacters(){
    	infile.seekg(0);
 }
 
+//判断是否是合法的单词 
+bool isWord(char word[]){
+	if(strlen(word)<4)
+		return false;
+	for(int i=0;i<4;i++)
+		if(!isalpha(word[i]))
+			return false;
+	return true;
+}
+
+//统计文件的单词总数（对应输出第二行）
+void getWords(){
+	int numbers=0;
+   	char data[1024]; 	
+   	while(infile>>data){
+   		//cout<<data<<endl; 
+   		strlwr(data);
+   		if(!isWord(data))
+   			continue;
+   		if(mword.find(data)==mword.end()){
+   			mword[data]=1;
+   			numbers++;
+		}
+		else
+			mword[data]++;	
+	}
+	
+	//cout<<"words:"<<numbers<<"\n\n";
+   	outfile<<"words:"<<numbers<<"\n";
+   	infile.clear();
+   	infile.seekg(0);
+}
+
 int main(int agrs,char* arg[]){
 	//cout<<arg[1]<<endl<<arg[2]<<endl;
 	
 	openInFile(arg[1]);//打开输入文件
 	openOutFile(arg[2]);//打开输出文件 
 	getCharacters();//统计文件的字符数（对应输出第一行）
+	getWords();//统计文件的单词总数（对应输出第二行）
 }
