@@ -76,6 +76,22 @@ void getWords(){
    	infile.seekg(0);
 }
 
+//统计文件的有效行数（对应输出第三行）
+void getLines(){
+	int count=0;
+	string str;
+	while(getline(infile,str,'\n')){
+		string blanks("\f\v\r\t\n");
+    	str.erase(0,str.find_first_not_of(blanks));
+    	str.erase(str.find_last_not_of(blanks)+1);
+		if(str.length()>0)
+			count++;
+	}
+
+	//cout<<"lines:"<<count<<"\n\n";
+	outfile<<"lines:"<<count<<"\n";
+}
+
 int main(int agrs,char* arg[]){
 	//cout<<arg[1]<<endl<<arg[2]<<endl;
 	
@@ -83,4 +99,5 @@ int main(int agrs,char* arg[]){
 	openOutFile(arg[2]);//打开输出文件 
 	getCharacters();//统计文件的字符数（对应输出第一行）
 	getWords();//统计文件的单词总数（对应输出第二行）
+	getLines();//统计文件的有效行数（对应输出第三行）
 }
