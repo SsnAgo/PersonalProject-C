@@ -11,6 +11,21 @@ ifstream infile;
 ofstream outfile;
 map<string, int> mword;
 
+class WordFile {
+public:
+	void openInFile(char in[]);
+	void openOutFile(char out[]);
+	void getCharacters();
+	void getWords();
+	void getLines();
+	void getWordsNum();
+	bool isWord(char word[]);
+private:
+	ifstream infile;
+	ofstream outfile;
+	map<string, int> mword;
+};
+
 bool cmp(const pair<string, int>& a, const pair<string, int>& b) {
 	if (a.second != b.second)
 		return a.second > b.second;
@@ -18,7 +33,7 @@ bool cmp(const pair<string, int>& a, const pair<string, int>& b) {
 }
 
 //打开输入文件 
-void openInFile(char in[]) {
+void WordFile::openInFile(char in[]) {
 	infile.open(in);
 	if (!infile.is_open()) {
 		cout << "Could not find the file\n";
@@ -28,7 +43,7 @@ void openInFile(char in[]) {
 }
 
 //打开输出文件 
-void openOutFile(char out[]) {
+void WordFile::openOutFile(char out[]) {
 	outfile.open(out);
 	if (!outfile.is_open()) {
 		cout << "Could not find the file\n";
@@ -38,7 +53,7 @@ void openOutFile(char out[]) {
 }
 
 //统计文件的字符数（对应输出第一行）
-void getCharacters() {
+void WordFile::getCharacters() {
 	int count = 0;
 	char c;
 	while ((c = infile.get()) != EOF) {
@@ -46,14 +61,14 @@ void getCharacters() {
 		count++;
 	}
 
-	cout << endl << "characters:" << count << "\n\n";
+	//cout <<"characters:" << count << "\n";
 	outfile << "characters:" << count << "\n";
 	infile.clear();
 	infile.seekg(0);
 }
 
 //判断是否是合法的单词 
-bool isWord(char word[]) {
+bool WordFile::isWord(char word[]) {
 	if (strlen(word) < 4)
 		return false;
 	for (int i = 0;i < 4;i++)
@@ -63,12 +78,12 @@ bool isWord(char word[]) {
 }
 
 //统计文件的单词总数（对应输出第二行）
-void getWords() {
+void WordFile::getWords() {
 	int numbers = 0;
 	char data[1024];
 	while (infile >> data) {
 		//cout<<data<<endl; 
-		//_strlwr_s(data); //vs下使用 
+		//_strlwr_s(data);//vs下 
 		strlwr(data);
 		if (!isWord(data))
 			continue;
@@ -80,14 +95,14 @@ void getWords() {
 			mword[data]++;
 	}
 
-	cout << "words:" << numbers << "\n\n";
+	//cout << "words:" << numbers << "\n";
 	outfile << "words:" << numbers << "\n";
 	infile.clear();
 	infile.seekg(0);
 }
 
 //统计文件的有效行数（对应输出第三行）
-void getLines() {
+void WordFile::getLines() {
 	int count = 0;
 	string str;
 	while (getline(infile, str, '\n')) {
@@ -100,12 +115,12 @@ void getLines() {
 		}
 	}
 
-	cout << "lines:" << count << "\n\n";
+	//cout << "lines:" << count << "\n";
 	outfile << "lines:" << count << "\n";
 }
 
 //统计文件中各单词的出现次数（对应输出接下来10行）
-void getWordsNum() {
+void WordFile::getWordsNum() {
 	int numbers = 0;
 
 	vector< pair<string, int> > vec(mword.begin(), mword.end());
@@ -115,18 +130,28 @@ void getWordsNum() {
 	if (vec.size() < 10)
 		len = vec.size();
 	for (int i = 0;i < len;i++) {
-		cout << vec[i].first << " : " << vec[i].second << endl;
+		//cout << vec[i].first << " : " << vec[i].second << endl;
 		outfile << vec[i].first << ":" << vec[i].second << "\n";
 	}
 }
 
 int main(int agrs, char* arg[]) {
 	//cout<<arg[1]<<endl<<arg[2]<<endl;
-
+	/*
 	openInFile(arg[1]);//打开输入文件
 	openOutFile(arg[2]);//打开输出文件 
 	getCharacters();//统计文件的字符数（对应输出第一行）
 	getWords();//统计文件的单词总数（对应输出第二行）
 	getLines();//统计文件的有效行数（对应输出第三行）
 	getWordsNum();//统计文件中各单词的出现次数（对应输出接下来10行）
+	*/
+	WordFile wf;
+	wf.openInFile(arg[1]);
+	wf.openOutFile(arg[2]);
+	wf.getCharacters();
+	wf.getWords();
+	wf.getLines();
+	wf.getWordsNum();
+
+	return 0;
 }
