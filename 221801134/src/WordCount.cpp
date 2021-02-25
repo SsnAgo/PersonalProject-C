@@ -4,7 +4,8 @@
 int main(int agrs, char* arg[])
 {
 	WordFile wf;
-	wf.openInFile(arg[1]);
+	if(!wf.openInFile(arg[1]))
+		exit(EXIT_FAILURE);
 	wf.openOutFile(arg[2]);
 	wf.getCharacters();
 	wf.getWords();

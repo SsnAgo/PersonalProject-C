@@ -7,27 +7,31 @@ bool cmp(const pair<string, int>& a, const pair<string, int>& b) {
 }
 
 //打开输入文件 
-void WordFile::openInFile(char in[]) {
+bool WordFile::openInFile(char in[]) {
 	infile.open(in);
 	if (!infile.is_open()) {
 		cout << "Could not find the file\n";
 		cout << "Program terminating\n";
-		exit(EXIT_FAILURE);
+		//exit(EXIT_FAILURE);
+		return false;
 	}
+	return true;
 }
 
 //打开输出文件 
-void WordFile::openOutFile(char out[]) {
+bool WordFile::openOutFile(char out[]) {
 	outfile.open(out);
 	if (!outfile.is_open()) {
 		cout << "Could not find the file\n";
 		cout << "Program terminating\n";
-		exit(EXIT_FAILURE);
+		//exit(EXIT_FAILURE);
+		return false;
 	}
+	return true;
 }
 
 //统计文件的字符数（对应输出第一行）
-void WordFile::getCharacters() {
+int WordFile::getCharacters() {
 	int count = 0;
 	char c;
 	while ((c = infile.get()) != EOF) {
@@ -39,6 +43,7 @@ void WordFile::getCharacters() {
 	outfile << "characters:" << count << "\n";
 	infile.clear();
 	infile.seekg(0);
+	return count;
 }
 
 //判断是否是合法的单词 
@@ -51,7 +56,7 @@ bool WordFile::isWord(char word[]) {
 	return true;
 }
 
-void WordFile::getWords() {
+int WordFile::getWords() {
 	int numbers = 0;
 	char data[1024];
 	while (infile >> data) {
@@ -72,10 +77,11 @@ void WordFile::getWords() {
 	outfile << "words:" << numbers << "\n";
 	infile.clear();
 	infile.seekg(0);
+	return numbers;
 }
 
 //统计文件的有效行数（对应输出第三行）
-void WordFile::getLines() {
+int WordFile::getLines() {
 	int count = 0;
 	string str;
 	while (getline(infile, str, '\n')) {
@@ -90,12 +96,11 @@ void WordFile::getLines() {
 
 	cout << "lines:" << count << "\n";
 	outfile << "lines:" << count << "\n";
+	return count;
 }
 
 //统计文件中各单词的出现次数（对应输出接下来10行）
 void WordFile::getWordsNum() {
-	int numbers = 0;
-
 	vector< pair<string, int> > vec(mword.begin(), mword.end());
 	//对线性的vector进行排序
 	sort(vec.begin(), vec.end(), cmp);

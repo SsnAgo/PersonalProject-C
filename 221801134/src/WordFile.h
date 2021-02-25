@@ -11,11 +11,11 @@ using namespace std;
 
 class WordFile {
 public:
-	void openInFile(char in[]);
-	void openOutFile(char out[]);
-	void getCharacters();
-	void getWords();
-	void getLines();
+	bool openInFile(char in[]);
+	bool openOutFile(char out[]);
+	int getCharacters();
+	int getWords();
+	int getLines();
 	void getWordsNum();
 	bool isWord(char word[]);
 private:
