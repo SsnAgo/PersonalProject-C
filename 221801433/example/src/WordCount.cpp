@@ -2,15 +2,59 @@
 #include <fstream>
 #include <string>
 using namespace std;
-int main(int argc, char* argv[]) {
+int countLetter(string txt){
 	ifstream fin("inter.txt");
 	if (!fin) {
-		cout << "无法打开文件inter.txt";
+		cout << "无法打开文件" << txt;
+		return 0;
 	}
 	string s; 
 	int count = 0;
 	while (getline(fin, s)) {
+		
 		count += s.size();
 	}
-	cout << "字符数为：" << count;
+	fin.close();
+	return count;
 }
+int countWord(string txt){
+	ifstream fin("inter.txt");
+	if (!fin) {
+		cout << "无法打开文件" << txt;
+		return 0;
+	}
+	string s; 
+	int words = 0;
+	int isfirst = 1;
+	int letters = 0;
+	while (getline(fin,s)){
+		for(int i = 0;i < s.size();i++){
+			if((s[i]>='A'&&s[i]<='Z')||(s[i]>='a'&&s[i]<='z')||(s[i]<='9'&&s[i]>='0')){
+				if(isfirst == 1){
+					isfirst = 0;
+					while((s[i]>='A'&&s[i]<='Z')||(s[i]>='a'&&s[i]<='z')){
+						letters ++;
+						i++;
+					}
+					while((s[i]>='A'&&s[i]<='Z')||(s[i]>='a'&&s[i]<='z')||(s[i]<='9'&&s[i]>='0')){
+						i++;
+					}
+					if(letters >= 4){
+						words++;
+					}
+					isfirst = 1;
+					letters = 0;
+				}
+			}
+		}
+	}
+	fin.close();
+	return words;
+}
+int main(int argc, char* argv[]) {
+	int count = countLetter("inter.txt");
+	int words = countWord("inter.txt");
+	cout << "字符数为：" << count << endl;
+	cout << "单词数为：" << words << endl;
+}
+
