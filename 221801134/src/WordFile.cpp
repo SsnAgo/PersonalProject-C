@@ -9,24 +9,14 @@ bool cmp(const pair<string, int>& a, const pair<string, int>& b) {
 //打开输入文件 
 bool WordFile::openInFile(char in[]) {
 	infile.open(in);
-	if (!infile.is_open()) {
-		cout << "Could not find the file\n";
-		cout << "Program terminating\n";
-		//exit(EXIT_FAILURE);
+	if (!infile.is_open())
 		return false;
-	}
 	return true;
 }
 
 //打开输出文件 
 bool WordFile::openOutFile(char out[]) {
 	outfile.open(out);
-	if (!outfile.is_open()) {
-		cout << "Could not find the file\n";
-		cout << "Program terminating\n";
-		//exit(EXIT_FAILURE);
-		return false;
-	}
 	return true;
 }
 
@@ -39,7 +29,7 @@ int WordFile::getCharacters() {
 		count++;
 	}
 
-	cout <<"characters:" << count << "\n";
+	cout << "characters:" << count << "\n";
 	outfile << "characters:" << count << "\n";
 	infile.clear();
 	infile.seekg(0);
