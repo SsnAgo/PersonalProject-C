@@ -30,6 +30,6 @@ public:
 	}
 	~WordCount() {};
 	int charcount();
-
+	int linecount();
 	void start();
 };
