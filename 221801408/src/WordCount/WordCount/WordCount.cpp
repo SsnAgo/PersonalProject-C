@@ -25,7 +25,8 @@ int main(int argc, char *argv[])
 		cerr << "打开失败!" << endl;
 		exit(1);
 	}
-	
+	WordCount A(fp, filename, filename2);
+	A.start();
 
 
 	fclose(fp);

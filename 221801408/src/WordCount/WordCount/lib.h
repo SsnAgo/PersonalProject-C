@@ -29,6 +29,7 @@ public:
 		output_file = c;
 	}
 	~WordCount() {};
+	int charcount();
 
 	void start();
 };
