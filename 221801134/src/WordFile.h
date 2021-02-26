@@ -7,20 +7,25 @@
 #include<vector>
 #include<algorithm>
 #include<string>
+#include<regex>
 using namespace std;
 
 class WordFile {
 public:
 	bool openInFile(char in[]);
 	bool openOutFile(char out[]);
-	int getCharacters();
-	int getWords();
-	int getLines();
+	string getWordFile();
+
+	int getCharacters(string str);
+	int getWords(string str);
+	int getLines(string str);
+
 	void getWordsNum();
-	bool isWord(char word[]);
+	bool isWord(string word);
 private:
 	ifstream infile;
 	ofstream outfile;
 	map<string, int> mword;
 };
 bool cmp(const pair<string, int>& a, const pair<string, int>& b);
+vector<string> split(const string &s);
