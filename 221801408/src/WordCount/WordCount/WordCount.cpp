@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 	const char* filename2;
 	const char* filename;
 
-	if (argc == 3)
+	if (argc == 3)//输入俩个参数 值为3
 	{
 		filename = argv[1];
 		filename2 = argv[2];
