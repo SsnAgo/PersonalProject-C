@@ -1,10 +1,4 @@
-﻿#include<iterator>
-#include<cctype>
-#include<ctype.h>
-#include<unordered_map>
-#include<algorithm>
-#include<iostream>
-
+﻿#include "lib.h"
 
 
 using namespace std;
