@@ -14,6 +14,8 @@
 #include<algorithm>
 
 using namespace std;
+
+
 class WordCount
 {
 
@@ -29,6 +31,7 @@ public:
 		output_file = c;
 	}
 	~WordCount() {};
+	int wordnum();
 	int charcount();
 	int linecount();
 	void start();
