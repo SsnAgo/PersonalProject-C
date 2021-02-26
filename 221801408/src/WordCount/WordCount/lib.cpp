@@ -1,5 +1,6 @@
 ﻿#include "lib.h" 
 unordered_map<string, int> stringmap;
+
 int WordCount::charcount()
 {
 	FILE *fp;
@@ -51,6 +52,14 @@ int WordCount::linecount()
 	fclose(fp);
 	return line;
 }
+bool cmp(pair < int, string > a, pair < int, string > b)//定义sort规则
+{
+	if (a.first != b.first)//没这一步实现不了字典输出
+		return a.first > b.first;
+	else
+		return a.second < b.second;
+}
+
 void getstring(stringstream &ss)//生成string中单词的键值对
 {
 	string strTmp;
