@@ -55,10 +55,9 @@ int WordFile::getWords() {
 		//strlwr(data);
 		if (!isWord(data))
 			continue;
-		if (mword.find(data) == mword.end()) {
+		numbers++;
+		if (mword.find(data) == mword.end()) 
 			mword[data] = 1;
-			numbers++;
-		}
 		else
 			mword[data]++;
 	}
