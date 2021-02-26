@@ -134,5 +134,53 @@ void WordCount::start()
 		cerr << "创建失败！" << endl;
 		exit(1);
 	}
+	string strFile, tmp;
+	int i = 0;
+	while (getline(file, tmp))//直到文件结尾，依次逐行读入文本
+	{
+		strFile.append(tmp); //每次读入一行附加到strFile结尾
+		strFile.append(" ");//行尾补充空格
+		tmp.clear();
+	}
+	for (unsigned int i = 0; i <= strFile.size(); i++)
+	{
+
+		if (strFile[i] >= 'A'&&strFile[i] <= 'Z')
+			strFile[i] += 32;
+	}
+	for (unsigned int i = 0; i < strFile.length(); i++)
+	{
+		if (ispunct(strFile[i]))
+			strFile[i] = ' '; //符号位替换成为空格
+	}
+	stringstream ss(strFile);
+    if (stringmap.empty())
+		getstring(ss);
+	vector < pair < int, string > > z;
+	for (unordered_map<string, int>::iterator it = stringmap.begin(); it != stringmap.end(); ++it)
+		z.push_back(make_pair(it->second, it->first));
+	sort(z.begin(), z.end(), cmp);
+	for (unsigned int k = 0; k < z.size(); ++k)
+	{
+		string a = z[k].second.c_str();
+		if (
+			((a[0] >= 'a'&&a[0] <= 'z') || (a[0] >= 'A'&&a[0] <= 'Z')) &&
+			((a[1] >= 'a'&&a[1] <= 'z') || (a[1] >= 'A'&&a[1] <= 'Z')) &&
+			((a[2] >= 'a'&&a[2] <= 'z') || (a[2] >= 'A'&&a[2] <= 'Z')) &&
+			((a[3] >= 'a'&&a[3] <= 'z') || (a[3] >= 'A'&&a[3] <= 'Z')))
+
+		{
+			for (int o = 0; o < a.size(); o++)
+			{
+				if (a[o] >= 'A'&&a[o] <= 'Z')
+					a[o] += 32;
+			}
+
+			outfile << a << ":" << ' ' << z[k].first << endl;//打印结果
+			i++;
+			if (i >= 10)
+				break;//输出频率前十
+		}
+	}
 	outfile.close();
 }
