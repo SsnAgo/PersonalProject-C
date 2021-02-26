@@ -77,6 +77,15 @@ int WordFile::getLines(string str) {
 			s = "";
 		}
 	}
+	if (s != "") {
+		string blanks("\f\v\r\t\n ");
+		s.erase(0, s.find_first_not_of(blanks));
+		s.erase(s.find_last_not_of(blanks) + 1);
+		if (s.length() > 0) {
+			count++;
+			cout << s << endl;
+		}
+	}
 
 	cout << "lines:" << count << "\n\n";
 	outfile << "lines:" << count << "\n";
