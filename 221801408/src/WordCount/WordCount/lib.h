@@ -30,4 +30,5 @@ public:
 	}
 	~WordCount() {};
 
+	void start();
 };
