@@ -46,3 +46,6 @@ except IndexError:
     print("未指明输入/输出文件")
 except FileNotFoundError:
     print("找不到输入文件{0}".format(input_file))
+except:
+    info = sys.exc_info()
+    print(info[1])
