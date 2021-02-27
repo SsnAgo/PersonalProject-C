@@ -11,12 +11,20 @@ vector<words> v;
 void wordsort(){
 	for(int i = 0;i < v.size()-1;i++){
 		for(int j = i+1;j < v.size();j++){
-			if(v[i].word.compare(v[j].word) > 0){
+			if(v[i].num < v[j].num){
 				words temp;
 				temp = v[i];
 				v[i] = v[j];
 				v[j] = temp;
+			}else if(v[i].num == v[j].num){
+				if(v[i].word.compare(v[j].word) > 0){
+					words temp;
+					temp = v[i];
+					v[i] = v[j];
+					v[j] = temp;
+				}
 			}
+			
 		}
 	}
 } 
@@ -129,7 +137,7 @@ int main(int argc, char* argv[]) {
 	out << "words: " << word << '\n';
 	out << "lines: " <<rows << '\n';
 	wordsort();
-	for(int i = 0;i < v.size();i++){
+	for(int i = 0;(i < v.size()&&i < 10);i++){
 		out << "words" << i+1 << ": " << v[i].num << '\n';
 	}
 }
