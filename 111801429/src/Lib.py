@@ -29,7 +29,7 @@ def count_word(line, count):
 
 # 统计最多的10个单词及其词频
 def count_most(count):
-    count = sorted(count.items(), key=lambda x: (-x[1], x[0]))
-    result = {k: v for k, v in count[:10]}
+    ans = sorted(count.items(), key=lambda x: (-x[1], x[0]))
+    result = {k: v for k, v in ans[:10]}
 
     return result
