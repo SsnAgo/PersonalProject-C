@@ -8,6 +8,18 @@ typedef struct {
 	int num;
 }words;
 vector<words> v;
+void wordsort(){
+	for(int i = 0;i < v.size()-1;i++){
+		for(int j = i+1;j < v.size();j++){
+			if(v[i].word.compare(v[j].word) > 0){
+				words temp;
+				temp = v[i];
+				v[i] = v[j];
+				v[j] = temp;
+			}
+		}
+	}
+} 
 int countLetter(char* inter){
 	ifstream fin(inter);
 	if (!fin) {
@@ -36,10 +48,10 @@ int countWord(char* inter){
 	int letters = 0;
 	while (getline(fin,s)){
 		for(int i = 0;i < s.size();i++){
-			if((s[i]>='A'&&s[i]<='Z')||(s[i]>='a'&&s[i]<='z')||(s[i]<='9'&&s[i]>='0')){
+			if((s[i] >= 'A'&&s[i] <= 'Z')||(s[i] >= 'a'&&s[i] <= 'z')||(s[i] <= '9'&&s[i] >= '0')){
 				if(isfirst == 1){
 					isfirst = 0;
-					while((s[i]>='A'&&s[i]<='Z')||(s[i]>='a'&&s[i]<='z')){
+					while((s[i] >= 'A'&&s[i] <= 'Z')||(s[i] >= 'a'&&s[i] <= 'z')){
 						if(isupper(s[i])){
 							s[i] = tolower(s[i]);
 						}
@@ -47,7 +59,7 @@ int countWord(char* inter){
 						letters ++;
 						i++;
 					}
-					while((s[i]>='A'&&s[i]<='Z')||(s[i]>='a'&&s[i]<='z')||(s[i]<='9'&&s[i]>='0')){
+					while((s[i] >= 'A' &&s [i]<='Z')||(s[i] >= 'a'&&s[i] <= 'z')||(s[i] <= '9'&&s[i] >= '0')){
 						if(isupper(s[i])){
 							s[i] = tolower(s[i]);
 						}
@@ -116,6 +128,7 @@ int main(int argc, char* argv[]) {
 	out << "characters: " << count << '\n';
 	out << "words: " << word << '\n';
 	out << "lines: " <<rows << '\n';
+	wordsort();
 	for(int i = 0;i < v.size();i++){
 		out << "words" << i+1 << ": " << v[i].num << '\n';
 	}
