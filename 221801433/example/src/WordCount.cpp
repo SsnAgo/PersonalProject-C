@@ -79,9 +79,14 @@ int main(int argc, char* argv[]) {
 	int count = countLetter(argv[1]);
 	int words = countWord(argv[1]);
 	int rows = countRow(argv[1]);
-	cout << "字符数为：" << count << endl;
-	cout << "单词数为：" << words << endl;
-	cout << "行数为：" <<rows ;
+	ofstream out(argv[2]);
+	if(!out){
+		cout << "Unable to open otfile";
+		exit(1); 
+    }
+	out << "characters:" << count << endl;
+	out << "words:" << words << endl;
+	out << "lines:" <<rows ;
 	
 	
 }
