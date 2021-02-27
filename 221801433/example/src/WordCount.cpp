@@ -2,10 +2,10 @@
 #include <fstream>
 #include <string>
 using namespace std;
-int countLetter(string txt){
-	ifstream fin("inter.txt");
+int countLetter(char* inter){
+	ifstream fin(inter);
 	if (!fin) {
-		cout << "无法打开文件" << txt;
+		cout << "无法打开文件" << inter;
 		return 0;
 	}
 	string s; 
@@ -17,10 +17,10 @@ int countLetter(string txt){
 	fin.close();
 	return count;
 }
-int countWord(string txt){
-	ifstream fin("inter.txt");
+int countWord(char* inter){
+	ifstream fin(inter);
 	if (!fin) {
-		cout << "无法打开文件" << txt;
+		cout << "无法打开文件" << inter;
 		return 0;
 	}
 	string s; 
@@ -51,10 +51,10 @@ int countWord(string txt){
 	fin.close();
 	return words;
 }
-int countRow(string txt){
-	ifstream fin("inter.txt");
+int countRow(char* inter){
+	ifstream fin(inter);
 	if (!fin) {
-		cout << "无法打开文件" << txt;
+		cout << "无法打开文件" << inter;
 		return 0;
 	}
 	int rows = 0;
@@ -75,15 +75,14 @@ int countRow(string txt){
 	return rows;
 }
 int main(int argc, char* argv[]) {
-	/*
-	int count = countLetter("inter.txt");
-	int words = countWord("inter.txt");
-	int rows = countRow("inter.txt");
+	
+	int count = countLetter(argv[1]);
+	int words = countWord(argv[1]);
+	int rows = countRow(argv[1]);
 	cout << "字符数为：" << count << endl;
 	cout << "单词数为：" << words << endl;
 	cout << "行数为：" <<rows ;
-	*/
-	cout << argv[1] <<endl;
-	cout << argv[2];
+	
+	
 }
 
