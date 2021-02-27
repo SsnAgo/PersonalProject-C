@@ -69,7 +69,6 @@ int countWord(char* inter){
 							newword.num = 1;
 							v.push_back(newword);
 						}
-						cout << aword <<endl;
 					}
 					isfirst = 1;
 					letters = 0;
@@ -111,7 +110,7 @@ int main(int argc, char* argv[]) {
 	int rows = countRow(argv[1]);
 	ofstream out(argv[2]);
 	if(!out){
-		cout << "Unable to open otfile";
+		cout << "无法打开文件";
 		exit(1); 
     }
 	out << "characters: " << count << '\n';
