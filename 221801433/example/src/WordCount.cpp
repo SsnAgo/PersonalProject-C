@@ -51,10 +51,35 @@ int countWord(string txt){
 	fin.close();
 	return words;
 }
+int countRow(string txt){
+	ifstream fin("inter.txt");
+	if (!fin) {
+		cout << "无法打开文件" << txt;
+		return 0;
+	}
+	int rows = 0;
+	int isnull = 1;
+	string s;
+	while (getline(fin,s)){
+		for(int i = 0;i < s.size();i++){
+			if(s[i] != ' '){
+				isnull = 0;
+			}
+		}
+		if(isnull == 0){
+			rows++;
+			isnull = 1;
+		}
+	}
+	fin.close();
+	return rows;
+}
 int main(int argc, char* argv[]) {
 	int count = countLetter("inter.txt");
 	int words = countWord("inter.txt");
+	int rows = countRow("inter.txt");
 	cout << "字符数为：" << count << endl;
 	cout << "单词数为：" << words << endl;
+	cout << "行数为：" <<rows ;
 }
 
