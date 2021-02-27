@@ -1,7 +1,13 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
 using namespace std;
+typedef struct {
+	string word;
+	int num;
+}words;
+vector<words> v;
 int countLetter(char* inter){
 	ifstream fin(inter);
 	if (!fin) {
@@ -24,7 +30,8 @@ int countWord(char* inter){
 		return 0;
 	}
 	string s; 
-	int words = 0;
+	string aword="";
+	int word = 0;
 	int isfirst = 1;
 	int letters = 0;
 	while (getline(fin,s)){
@@ -33,23 +40,46 @@ int countWord(char* inter){
 				if(isfirst == 1){
 					isfirst = 0;
 					while((s[i]>='A'&&s[i]<='Z')||(s[i]>='a'&&s[i]<='z')){
+						if(isupper(s[i])){
+							s[i] = tolower(s[i]);
+						}
+						aword.append(1,s[i]);
 						letters ++;
 						i++;
 					}
 					while((s[i]>='A'&&s[i]<='Z')||(s[i]>='a'&&s[i]<='z')||(s[i]<='9'&&s[i]>='0')){
+						if(isupper(s[i])){
+							s[i] = tolower(s[i]);
+						}
+						aword.append(1,s[i]);
 						i++;
 					}
 					if(letters >= 4){
-						words++;
+						word++;
+						int ishave = 0;
+						for(int j = 0;j < v.size();j++){
+							if(v[j].word == aword){
+								ishave = 1;
+								v[j].num++;
+							}
+						}
+						if(ishave == 0){
+							words newword;
+							newword.word = aword;
+							newword.num = 1;
+							v.push_back(newword);
+						}
+						cout << aword <<endl;
 					}
 					isfirst = 1;
 					letters = 0;
+					aword = "";
 				}
 			}
 		}
 	}
 	fin.close();
-	return words;
+	return word;
 }
 int countRow(char* inter){
 	ifstream fin(inter);
@@ -77,17 +107,18 @@ int countRow(char* inter){
 int main(int argc, char* argv[]) {
 	
 	int count = countLetter(argv[1]);
-	int words = countWord(argv[1]);
+	int word = countWord(argv[1]);
 	int rows = countRow(argv[1]);
 	ofstream out(argv[2]);
 	if(!out){
 		cout << "Unable to open otfile";
 		exit(1); 
     }
-	out << "characters:" << count << endl;
-	out << "words:" << words << endl;
-	out << "lines:" <<rows ;
-	
-	
+	out << "characters: " << count << '\n';
+	out << "words: " << word << '\n';
+	out << "lines: " <<rows << '\n';
+	for(int i = 0;i < v.size();i++){
+		out << "words" << i+1 << ": " << v[i].num << '\n';
+	}
 }
 
