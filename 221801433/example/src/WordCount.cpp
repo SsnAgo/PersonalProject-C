@@ -75,11 +75,15 @@ int countRow(string txt){
 	return rows;
 }
 int main(int argc, char* argv[]) {
+	/*
 	int count = countLetter("inter.txt");
 	int words = countWord("inter.txt");
 	int rows = countRow("inter.txt");
 	cout << "字符数为：" << count << endl;
 	cout << "单词数为：" << words << endl;
 	cout << "行数为：" <<rows ;
+	*/
+	cout << argv[1] <<endl;
+	cout << argv[2];
 }
 
