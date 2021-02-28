@@ -6,7 +6,8 @@ import re
 
 # 统计每行字符数
 def count_character(line):
-    character_num = len([i for i in list(line) if ord(i) <= 127])
+    # character_num = len([i for i in list(line) if ord(i) <= 127])
+    character_num = len(line)
 
     return character_num
 
