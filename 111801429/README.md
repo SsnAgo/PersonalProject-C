@@ -1,7 +1,9 @@
 # 命令行程序WordCount
 
 ## 运行
-`python WordCount.py input.txt output.txt`
+```
+python WordCount.py input.txt output.txt
+```
 
 ***
 
