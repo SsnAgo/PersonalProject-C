@@ -5,8 +5,7 @@ int CountLines(char *filename){
 	char c;
 	std::fstream file;
 	file.open(filename);
-	int state = EMPTY; // Indicates if the current line is empty
-
+	int state = EMPTY;  //当前行为空
 	while (file.get(c)){
 		if (state == EMPTY && !isspace(c)){
 			state = NOTEMPTY;

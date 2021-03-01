@@ -1,9 +1,7 @@
 #include "CountWords.h"
 
-int Transition(int state, char input, int *count)
-{
-	switch (state)
-	{
+int Transition(int state, char input, int *count){
+	switch (state){
 	case OUTWORD:
 		if (Separator(input)) return OUTWORD;
 		if (isalpha(input)) return P1;
@@ -46,7 +44,7 @@ int CountWords(char *filename){
 		state = Transition(state, c, &words);
 	}
 	if (state == ERROR){
-		std::cout << "DFA error state." << std::endl;
+		std::cout << "error state." << std::endl;
 	}
 	if (state == VALIDWORD){
 		words++;
