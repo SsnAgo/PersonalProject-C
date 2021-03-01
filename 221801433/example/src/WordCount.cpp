@@ -138,7 +138,7 @@ int main(int argc, char* argv[]) {
 	out << "lines: " <<rows << '\n';
 	wordsort();
 	for(int i = 0;(i < v.size()&&i < 10);i++){
-		out << "words" << i+1 << ": " << v[i].num << '\n';
+		out << v[i].word << ": " << v[i].num << '\n';
 	}
 }
 
