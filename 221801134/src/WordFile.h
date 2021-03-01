@@ -7,7 +7,6 @@
 #include<vector>
 #include<algorithm>
 #include<string>
-#include<regex>
 using namespace std;
 
 class WordFile {

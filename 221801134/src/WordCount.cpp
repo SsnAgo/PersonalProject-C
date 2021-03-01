@@ -1,8 +1,7 @@
 #include <iostream>
 #include "WordFile.h"
 
-int main(int agrs, char* arg[])
-{
+int main(int agrs, char* arg[]){
 	if (agrs < 3) {
 		cout << "Please input and output files!";
 		return 0;
@@ -14,6 +13,7 @@ int main(int agrs, char* arg[])
 		return 0;
 	}
 	wf.openOutFile(arg[2]);
+	
 	string s = wf.getWordFile();
 	wf.getCharacters(s);
 	wf.getWords(s);
