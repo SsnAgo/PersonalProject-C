@@ -22,7 +22,6 @@ bool WordFile::openOutFile(char out[]) {
 
 //统计文件的字符数（对应输出第一行）
 int WordFile::getCharacters(string str) {
-	//cout<<"characters: " << str.length()<< "\n\n";
 	outfile << "characters: " << str.length() << "\n";
 	return str.length();
 }
@@ -51,10 +50,8 @@ int WordFile::getWords(string str) {
 			mword[data] = 1;
 		else
 			mword[data]++;
-		//cout << data<<endl;
 	}
 		
-	//cout << "words: " << numbers << "\n\n";
 	outfile << "words: " << numbers << "\n";
 	return numbers;
 }
@@ -70,10 +67,8 @@ int WordFile::getLines(string str) {
 			string blanks("\f\v\r\t\n ");
 			s.erase(0, s.find_first_not_of(blanks));
 			s.erase(s.find_last_not_of(blanks) + 1);
-			if (s.length() > 0) {
+			if (s.length() > 0) 
 				count++;
-				//cout<<s<<endl;
-			}
 			s = "";
 		}
 	}
@@ -81,13 +76,10 @@ int WordFile::getLines(string str) {
 		string blanks("\f\v\r\t\n ");
 		s.erase(0, s.find_first_not_of(blanks));
 		s.erase(s.find_last_not_of(blanks) + 1);
-		if (s.length() > 0) {
+		if (s.length() > 0) 
 			count++;
-			//cout << s << endl;
-		}
 	}
 
-	//cout << "lines:" << count << "\n\n";
 	outfile << "lines: " << count << "\n";
 	return count;
 }
@@ -100,10 +92,8 @@ void WordFile::getWordsNum() {
 	int len = 10;
 	if (vec.size() < 10)
 		len = vec.size();
-	for (int i = 0; i < len; i++) {
-		//cout << vec[i].first << ": " << vec[i].second << endl;
+	for (int i = 0; i < len; i++) 
 		outfile << vec[i].first << ": " << vec[i].second << "\n";
-	}
 }
 
 vector<string> split(const std::string &s) {
