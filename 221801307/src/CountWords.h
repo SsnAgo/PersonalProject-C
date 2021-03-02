@@ -8,11 +8,11 @@
 #define IsNum(x) (x >= '0' && x <= '9')
 
 #define OUTWORD 0
-#define P1 1
-#define P2 2
-#define P3 3
-#define NotAWord 4 
-#define VALIDWORD 5
+#define A 1
+#define B 2
+#define C 3
+#define NoWord 4 
+#define WORD 5
 #define ERROR 6
 
 /*

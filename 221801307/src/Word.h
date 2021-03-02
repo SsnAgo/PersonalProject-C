@@ -11,11 +11,11 @@ using namespace std;
 #define IsNum(x) (x >= '0' && x <= '9')
 
 #define OUTWORD 0 // 当前没有识别到合法单词
-#define P1 1
-#define P2 2
-#define P3 3
-#define NotAWord 4 
-#define VALIDWORD 5 //当前识别到了合法单词
+#define A 1
+#define B 2
+#define C 3
+#define NoWord 4 
+#define WORD 5 //当前识别到了合法单词
 #define ERROR 6
 #define WORDCOUNT 20
 
@@ -71,7 +71,7 @@ int OutputF(vector<pair<int, string>> & Topwords,char *filename);
 /*
 函数名:OutputB
 描述:输出前10个单词到标准输出
-参数:@ topwords : top10单词列表
+参数:@topwords : top10单词列表
 返回:int:如果输出正确则为0，否则为 - 1。
 */
 int OutputB(vector<pair<int, string>> & Topwords);

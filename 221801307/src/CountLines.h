@@ -13,4 +13,4 @@
 返回:@int:总行数
 */
 
-int CountLines(char * filename);
+int CountLines(char *filename);

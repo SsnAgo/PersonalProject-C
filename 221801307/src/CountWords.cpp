@@ -4,30 +4,30 @@ int Transition(int state, char input, int *count){
 	switch (state){
 	case OUTWORD:
 		if (Separator(input)) return OUTWORD;
-		if (isalpha(input)) return P1;
-		if (IsNum(input)) return NotAWord;
+		if (isalpha(input)) return A;
+		if (IsNum(input)) return NoWord;
 
-	case NotAWord:
+	case NoWord:
 		if (Separator(input)) return OUTWORD;
-		else return NotAWord;
+		else return NoWord;
 
-	case P1:
-		if (IsNum(input)) return NotAWord;
-		if (isalpha(input)) return P2;
+	case A:
+		if (IsNum(input)) return NoWord;
+		if (isalpha(input)) return B;
 		else return OUTWORD;
 
-	case P2:
-		if (IsNum(input)) return NotAWord;
-		if (isalpha(input)) return P3;
+	case B:
+		if (IsNum(input)) return NoWord;
+		if (isalpha(input)) return C;
 		else return OUTWORD;
 
-	case P3:
-		if (IsNum(input)) return NotAWord;
-		if (isalpha(input)) return VALIDWORD;
+	case C:
+		if (IsNum(input)) return NoWord;
+		if (isalpha(input)) return WORD;
 		else return OUTWORD;
 
-	case VALIDWORD:
-		if (isalnum(input)) return VALIDWORD;
+	case WORD:
+		if (isalnum(input)) return WORD;
 		else { (*count)++; return OUTWORD; }
 	}
 	return ERROR;
@@ -46,7 +46,7 @@ int CountWords(char *filename){
 	if (state == ERROR){
 		std::cout << "error state." << std::endl;
 	}
-	if (state == VALIDWORD){
+	if (state == WORD){
 		words++;
 	}
 	return words;

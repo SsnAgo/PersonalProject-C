@@ -15,8 +15,6 @@ int CountLines(char *filename){
 			state = EMPTY;
 		}
 	}
-	if (state == NOTEMPTY){
-		lines++;
-	}
+	if (state == NOTEMPTY) lines++;
 	return lines;
 }

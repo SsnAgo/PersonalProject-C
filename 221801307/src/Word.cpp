@@ -17,33 +17,32 @@ int TransWord(int state, char input, string &word){
 	switch (state){
 	case OUTWORD:
 		if (Separator(input)) return OUTWORD;
-		if (isalpha(input)) { word += input; return P1; }
-		if (IsNum(input)) return NotAWord;
+		if (isalpha(input)) { word += input; return A; }
+		if (IsNum(input)) return NoWord;
 
-	case NotAWord:
+	case NoWord:
 		if (Separator(input)) return OUTWORD;
-		else return NotAWord;
+		else return NoWord;
 
-	case P1:
-		if (IsNum(input)) { word.clear(); return NotAWord; }
-		if (isalpha(input)) { word += input; return  P2; }
+	case A:
+		if (IsNum(input)) { word.clear(); return NoWord; }
+		if (isalpha(input)) { word += input; return  B; }
 		else { word.clear(); return OUTWORD; }
 
-	case P2:
-		if (IsNum(input)) { word.clear(); return NotAWord; }
-		if (isalpha(input)) { word += input; return  P3; }
+	case B:
+		if (IsNum(input)) { word.clear(); return NoWord; }
+		if (isalpha(input)) { word += input; return  C; }
 		else { word.clear(); return OUTWORD; }
 
-	case P3:
-		if (IsNum(input)) { word.clear(); return NotAWord; }
-		if (isalpha(input)) { word += input; return VALIDWORD; }
+	case C:
+		if (IsNum(input)) { word.clear(); return NoWord; }
+		if (isalpha(input)) { word += input; return WORD; }
 		else { word.clear(); return OUTWORD; }
 
-	case VALIDWORD:
-		if (isalnum(input)) { word += input; return VALIDWORD; }
+	case WORD:
+		if (isalnum(input)) { word += input; return WORD; }
 		else{
 			IntoHashTable(word);
-			//cout << word << endl;
 			word.clear();
 			return OUTWORD;
 		}
@@ -72,12 +71,10 @@ void WordNums(char *filename){
 		c = tolower(c);
 		state = TransWord(state, c, word);
 	}
-	if (state == VALIDWORD){
-		IntoHashTable(word);
-	}
+	if (state == WORD)	IntoHashTable(word);
 }
 
-vector<pair<int, string>> TopWords(){
+vector<pair<int, string>> TopWords(){ //存了二十个，但只返回前十个
 	for (iter = table.begin(); iter != table.end(); iter++) {
 		pair<int, string> currentWord = make_pair(iter->second, iter->first);
 		if (wordQueue.size() == WORDCOUNT) {
@@ -92,35 +89,32 @@ vector<pair<int, string>> TopWords(){
 		}
 	}
 
-	vector<pair<int, string>> Top10words;
+	vector<pair<int, string>> TenWords;
 	while (!wordQueue.empty()) {
-		Top10words.push_back(wordQueue.top());
+		TenWords.push_back(wordQueue.top());
 		wordQueue.pop();
 	}
 
-	sort(Top10words.begin(), Top10words.end(), MySort);
+	sort(TenWords.begin(), TenWords.end(), MySort);
 	table.clear();
-	return Top10words;
+	return TenWords;
 }
 
 int OutputF(vector<pair<int, string>> &Topwords, char *filename)
 {
-	if (Topwords.size() == 0){
-		return -1;
-	}
+	if (Topwords.size() == 0) return -1;
 
 	fstream file;
 	file.open(filename, ios::app);
 	if (!file) {
-		printf("Failed to create output file.\n");
+		printf("Failed to open output file.\n");
 		return -1;
 	}
 	int size = Topwords.size();
 	for (int i = 0; i < size && i < 10; i++) {
 		const char *word = (Topwords[i]).second.c_str();
-		file << "<";
 		file << word;
-		file << ">: ";
+		file << ": ";
 		file << (Topwords[i]).first;
 		file << endl;
 	}
@@ -130,10 +124,7 @@ int OutputF(vector<pair<int, string>> &Topwords, char *filename)
 
 int OutputB(vector<pair<int, string>>& Topwords)
 {
-	if (Topwords.size() == 0) {
-		return -1;
-	}
-
+	if (Topwords.size() == 0) return -1;
 	vector<pair<int, string>>::iterator iter;
 	for (iter = Topwords.begin(); iter != Topwords.end(); iter++) {
 		const char *word = iter->second.c_str();
