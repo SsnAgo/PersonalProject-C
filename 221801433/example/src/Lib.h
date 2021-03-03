@@ -3,37 +3,32 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <algorithm>
 using namespace std;
 class Lib {
 public:
-    typedef struct {
+    struct words{
         string word;
         int num;
-
-    }words;
+        bool operator < (const words& b){
+            if(num == b.num){
+                if(word.compare(b.word) < 0){
+                    return true;
+			    }else{
+			        return false;
+				}
+                
+			}else{
+			    return (num > b.num);
+			}
+		}
+    };
 
     vector<words> v;
+    
+
     void wordsort() {
-        for (int i = 0; i < v.size() - 1; i++) {
-            for (int j = i + 1; j < v.size(); j++) {
-                if (v[i].num < v[j].num) {
-                    words temp;
-
-                    temp = v[i];
-                    v[i] = v[j];
-                    v[j] = temp;
-                }
-                else if (v[i].num == v[j].num) {
-                    if (v[i].word.compare(v[j].word) > 0) {
-                        words temp;
-
-                        temp = v[i];
-                        v[i] = v[j];
-                        v[j] = temp;
-                    }
-                }
-            }
-        }
+        sort(v.begin(),v.end());
     }
 
     int CountLetter(char* inter) {

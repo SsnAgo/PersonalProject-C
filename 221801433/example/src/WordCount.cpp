@@ -2,8 +2,10 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <algorithm>
 #include "Lib.h"
 using namespace std;
+
 
 int main(int argc, char* argv[]) {
 	Lib lib;
