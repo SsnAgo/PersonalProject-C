@@ -6,11 +6,13 @@
 #include <cstring>
 #include <string>
 #include <fstream>
+#include <regex>
 
 using namespace std;
 
 int CharCount(const char* filename);
 int LinesCount(const char* filename);
+int WordsCount(const char* filename);
 
 int main(int argc, const char* argv[]) {
 	const char* InputFileName = "input.txt";
@@ -21,31 +23,33 @@ int main(int argc, const char* argv[]) {
 	{
 		cout << "Erro!" << endl;
 	}
-	int CharNum = CharCount(InputFileName);
-	int LinesNum = LinesCount(InputFileName);
+	int charNum = CharCount(InputFileName);
+	int linesNum = LinesCount(InputFileName);
+	int wordsNum = WordsCount(InputFileName);
 
 	ofstream out(OutputFileName);
 
-	out << "characters:" << CharNum << endl;
-	out << "lines:" << LinesNum << endl;
+	out << "characters:" << charNum << endl;
+	out << "words:" << wordsNum << endl;
+	out << "lines:" << linesNum << endl;
 	out.close();
 	return 0;
 }
 
 int CharCount(const char* filename)
 {
-	int CharNum = 0;
+	int charNum = 0;
 	ifstream ifs(filename);
 	char charTemp;
 
 	while ((charTemp = ifs.get()) != EOF)
 	{
 		if (charTemp >= NULL && charTemp <= '~')
-			CharNum++;
+			charNum++;
 	}
 	ifs.clear();
 	ifs.seekg(0);
-	return CharNum;
+	return charNum;
 }
 
 int LinesCount(const char* filename)
@@ -69,5 +73,23 @@ int LinesCount(const char* filename)
 			lines++;
 	}
 	return lines;
+}
+
+int WordsCount(const char* filename)
+{
+	regex word("[A-Za-z][A-Za-z][A-Za-z][A-Za-z]([\\w]+)");//单词的正则表达式
+	int wordNum = 0;
+	fstream fs;
+	fs.open(filename);
+	string str;
+	while (fs >> str)//读入一行
+	{
+		sregex_token_iterator end;
+		for (sregex_token_iterator iter(str.begin(), str.end(), word), end; iter != end; iter++)
+		{
+			wordNum++;
+		}
+	}
+	return wordNum;
 }
 
