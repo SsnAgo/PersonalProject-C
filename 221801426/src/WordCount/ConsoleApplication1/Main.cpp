@@ -7,12 +7,19 @@
 #include <string>
 #include <fstream>
 #include <regex>
+#include <map>
+#include <algorithm>
+#include <unordered_map>
+#define psi pair<string, int>
+#define vpsi vector<psi>
+
 
 using namespace std;
 
 int CharCount(const char* filename);
 int LinesCount(const char* filename);
 int WordsCount(const char* filename);
+void WordsPrint(const char* filename1, const char* filename2, int num);
 
 int main(int argc, const char* argv[]) {
 	const char* InputFileName = "input.txt";
@@ -32,6 +39,7 @@ int main(int argc, const char* argv[]) {
 	out << "characters:" << charNum << endl;
 	out << "words:" << wordsNum << endl;
 	out << "lines:" << linesNum << endl;
+	WordsPrint(InputFileName, OutputFileName, 10);
 	out.close();
 	return 0;
 }
@@ -40,11 +48,11 @@ int CharCount(const char* filename)
 {
 	int charNum = 0;
 	ifstream ifs(filename);
-	char charTemp;
+	char c;
 
-	while ((charTemp = ifs.get()) != EOF)
+	while ((c = ifs.get()) != EOF)
 	{
-		if (charTemp >= NULL && charTemp <= '~')
+		if (c >= NULL && c <= '~')
 			charNum++;
 	}
 	ifs.clear();
@@ -74,15 +82,14 @@ int LinesCount(const char* filename)
 	}
 	return lines;
 }
-
 int WordsCount(const char* filename)
 {
-	regex word("[A-Za-z][A-Za-z][A-Za-z][A-Za-z]([\\w]+)");//单词的正则表达式
+	regex word("[A-Za-z][A-Za-z][A-Za-z][A-Za-z]([\\w]+)");
 	int wordNum = 0;
 	fstream fs;
 	fs.open(filename);
 	string str;
-	while (fs >> str)//读入一行
+	while (fs >> str)
 	{
 		sregex_token_iterator end;
 		for (sregex_token_iterator iter(str.begin(), str.end(), word), end; iter != end; iter++)
@@ -91,5 +98,55 @@ int WordsCount(const char* filename)
 		}
 	}
 	return wordNum;
+}
+
+int SortWords(psi p1, psi p2)
+{
+	if (p1.second == p2.second)
+	{
+		return p1.first < p2.first;//词频相等按字典序排列
+	}
+	else
+		return p1.second > p2.second;
+}
+vpsi WordsVec;
+void WordsFrequency(const char* filename)
+{
+	
+	unordered_map<string, int> WordsMap;
+	regex word("[A-Za-z][A-Za-z][A-Za-z][A-Za-z]([\\w]+)");//单词的正则表达式
+	fstream fs;
+	fs.open(filename);
+	string str;
+	while (fs >> str)//读入一行
+	{
+		transform(str.begin(),str.end(),str.begin(),::tolower);//转化为小写
+		sregex_token_iterator end;
+		for (sregex_token_iterator iter(str.begin(), str.end(), word), end; iter != end; iter++)
+		{
+			WordsMap[*iter]++;
+		}
+	}
+	for (unordered_map<string, int>::iterator iter = WordsMap.begin(); iter != WordsMap.end(); iter++)
+	{
+		WordsVec.push_back(pair<string, int>(iter->first, iter->second));
+	}
+	sort(WordsVec.begin(), WordsVec.end(), SortWords);
+	fs.clear();
+	fs.seekg(0);
+	fs.close();
+}
+void WordsPrint(const char* filename1, const char* filename2, int num)
+{
+	WordsFrequency(filename1);
+	int count = WordsVec.size();
+	count = (count < num) ? count : num;//判断词数是否小于10
+
+	ofstream out(filename2, ios::in | ios::out);
+	out.seekp(0, ios::end);
+	for (vpsi::iterator iter = WordsVec.begin(); iter != (WordsVec.begin() + count); ++iter)
+	{
+		out << iter->first << ":" << iter->second << endl;
+	}
 }
 
