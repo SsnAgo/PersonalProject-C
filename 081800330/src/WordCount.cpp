@@ -31,7 +31,9 @@ int main(int argc, char* argv[])
 			{
 			case 'n': {
 				data->number_asc++;
+
 				CountChar::countChar(temp, data);
+				temp = "";
 				break;
 			}
 			case 'r': {
@@ -52,6 +54,7 @@ int main(int argc, char* argv[])
 		else if (s == '\n' && temp.length())
 		{
 			CountChar::countChar(temp,data);
+			temp = "";
 		}
 		else if (s == '\\')
 		{
@@ -65,11 +68,11 @@ int main(int argc, char* argv[])
 		{
 			temp += ' ';
 		}
-		else
+		else if(s!= '\n')
 		{
 			temp += s;
 		}
-		cout << s ;
+		
 	}
 	end = clock();   
 	cout << "代码经过的时间是" << (end - start)*1.0 / CLK_TCK*1.0 << endl;
