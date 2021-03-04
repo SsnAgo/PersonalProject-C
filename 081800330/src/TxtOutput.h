@@ -3,6 +3,7 @@
 #include<iostream>
 #include"AppData.h"
 #include<unordered_map>
+#include<algorithm>
 class TxtOutput
 {
 public:
@@ -15,13 +16,19 @@ public:
 			cout << "打开文件失败！" << endl;
 		}
 	}
+	static bool cmp(pair<string, int>&p1, pair<string,int>&p2)
+	{
+		return p1.first < p2.first;
+	}
 	void OutTxt(AppData* data)
 	{
 		out << "characters: " << data->number_asc << "\n";
 		out << "words: " << data->number_words << "\n";
 		out << "lines: " << data->number_line << "\n";
-		unordered_map<string, int>::iterator it;
-		for (it = data->words.begin(); it != data->words.end(); it++)
+		vector<pair<string, int>>::iterator it;
+		vector<pair<string, int>> all(data->words.begin(), data->words.end());
+		sort(all.begin(), all.end(), TxtOutput::cmp);
+		for (it = all.begin(); it != all.end(); it++)
 		{
 			pair<string, int>temp = *it;
 			out << temp.first + ": " << temp.second << "\n";
