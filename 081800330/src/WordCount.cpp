@@ -4,14 +4,16 @@
 #include"AppData.h"
 #include<time.h>
 #include"CountChar.h"
-
+#include"TxtOutput.h"
 using namespace std;
 int main(int argc, char* argv[])
 {
 	clock_t start, end;  
 	start = clock();
 	string filename = argv[1];
+	string filename2 = argv[2];
 	TxtInput *input = new TxtInput(filename);
+	TxtOutput* output = new TxtOutput(filename2);
 	cin.unsetf(ios::skipws);
 	int count = 0;
 	AppData *data = new AppData();
@@ -71,9 +73,11 @@ int main(int argc, char* argv[])
 		}
 		
 	}
+
 	cout << "字符总数" << data->number_asc << endl;
 	cout << "单词总数:" << data->number_words << endl;
 	cout << "行数 :" << data->number_line << endl;
+	output->OutTxt(data);
 	end = clock();   
 	cout << "代码经过的时间是" << (end - start)*1.0 / CLK_TCK*1.0 << endl;
 }
