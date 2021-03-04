@@ -1,5 +1,6 @@
 #include "Lib.h"
-int CharCount(const char* filename)
+
+int CharCount(const char* filename)//统计字符数
 {
 	int charNum = 0;
 	ifstream ifs(filename);
@@ -15,7 +16,7 @@ int CharCount(const char* filename)
 	return charNum;
 }
 
-int LinesCount(const char* filename)
+int LinesCount(const char* filename)//统计行数
 {
 	int i = 0;
 	bool isNull = 1;
@@ -37,9 +38,10 @@ int LinesCount(const char* filename)
 	}
 	return lines;
 }
-int WordsCount(const char* filename)
+
+int WordsCount(const char* filename)//统计单词数
 {
-	regex word("[A-Za-z][A-Za-z][A-Za-z][A-Za-z]([\\w]+)");
+	regex word("[A-Za-z][A-Za-z][A-Za-z][A-Za-z]([\\w]+)");//单词的正则表达式
 	int wordNum = 0;
 	fstream fs;
 	fs.open(filename);
@@ -55,7 +57,7 @@ int WordsCount(const char* filename)
 	return wordNum;
 }
 
-int SortWords(psi p1, psi p2)
+int SortWords(psi p1, psi p2)//排序
 {
 	if (p1.second == p2.second)
 	{
@@ -64,6 +66,7 @@ int SortWords(psi p1, psi p2)
 	else
 		return p1.second > p2.second;
 }
+
 vpsi WordsVec;
 void WordsFrequency(const char* filename)
 {
@@ -91,7 +94,8 @@ void WordsFrequency(const char* filename)
 	fs.seekg(0);
 	fs.close();
 }
-void WordsPrint(const char* filename1, const char* filename2, int num)
+
+void WordsPrint(const char* filename1, const char* filename2, int num)//打印单词
 {
 	WordsFrequency(filename1);
 	int count = WordsVec.size();
