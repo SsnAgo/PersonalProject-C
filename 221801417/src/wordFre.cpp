@@ -6,6 +6,10 @@ void wordFre(char *filename)//频率最高的十个单词
 {
 	ifstream file;
 	file.open(filename);
+	if (!file.is_open())
+	{
+		cout << "文件打开失败";
+	}
 	string s;
 	regex r("\\b[a-zA-Z]{4}[a-zA-Z0-9]*", regex::icase);
 	while (file >> s) 

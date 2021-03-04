@@ -6,6 +6,10 @@ int wordNum(char * filename)//计算符合条件的单词总数
 {
 	ifstream file;
 	file.open(filename);
+	if (!file.is_open())
+	{
+		cout << "文件打开失败";
+	}
 	int count = 0;
 	string s;
 	regex r("\\b[a-zA-Z]{4}[a-zA-Z0-9]*", regex::icase);
