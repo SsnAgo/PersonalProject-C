@@ -21,17 +21,13 @@ int main(int argc, char* argv[])
 	{
 		char  s;
 		s = input->in.get();
-		if (s == '\n' || s == '\r' || s == ' ' || s == '\t')
-		{
-
-		}
 		if (flag)
 		{
 			switch (s)
 			{
 			case 'n': {
 				data->number_asc++;
-
+				data->number_line++;
 				CountChar::countChar(temp, data);
 				temp = "";
 				break;
@@ -54,6 +50,7 @@ int main(int argc, char* argv[])
 		else if (s == '\n' && temp.length())
 		{
 			CountChar::countChar(temp,data);
+			data->number_line++;
 			temp = "";
 		}
 		else if (s == '\\')
@@ -74,6 +71,9 @@ int main(int argc, char* argv[])
 		}
 		
 	}
+	cout << "字符总数" << data->number_asc << endl;
+	cout << "单词总数:" << data->number_words << endl;
+	cout << "行数 :" << data->number_line << endl;
 	end = clock();   
 	cout << "代码经过的时间是" << (end - start)*1.0 / CLK_TCK*1.0 << endl;
 }

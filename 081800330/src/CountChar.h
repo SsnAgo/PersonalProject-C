@@ -17,6 +17,11 @@ public:
 	{
 		 string temp = "";
 		 data->number_asc += s.length();
+		 if (CountChar::isEmptyLine(s))
+		 {
+			 data->number_line--;
+			 return 0;
+		 }
 		 for (int i = 0; i <= s.length(); i++)
 		 {
 			 if (i == s.length()||(!CountChar::numebr_letter(s[i]) && temp.length()) )
@@ -24,8 +29,9 @@ public:
 				 transform(temp.begin(), temp.end(), temp.begin(), ::tolower);
 				 if (CountChar::isWord(temp))
 				 {
+					 data->number_words++;
 					 data->words[temp]++;
-					 cout << "得到字母:" << temp << endl;
+					 //cout << "得到字母:" << temp << endl;
 					 
 				 }
 				 temp = "";
@@ -33,9 +39,16 @@ public:
 			 }
 			 temp += s[i];
 		 }
-		 cout << "得到字符串:" << s << endl;
+		// cout << "得到字符串:" << s << endl;
 		 return 0;
 	}
+	 static bool isEmptyLine(string word)
+	 {
+		 for (int i = 0; i < word.length(); i++)
+			 if (word[i] != ' ')
+				 return 0;
+		 return 1;
+	 }
 	 //判断是否是单词
 	 static bool isWord(string word)
 	 {
