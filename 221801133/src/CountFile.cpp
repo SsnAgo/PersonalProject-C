@@ -6,7 +6,7 @@ string countFile::getString(ifstream& in){
 	string str; 
 	while((ch=in.get())!=EOF){
 		//asii码字符范围 
-		if(ch>0&&ch<=127){
+		if(ch>0  &&  ch<=127){
 			//字母大写->小写
 			if(ch>=65  &&  ch<=90){
     		ch+=32;
@@ -23,7 +23,7 @@ void countFile::countLine(string str,ofstream& out){
 	int lines=0;
 	
 	string s;
-    for(int i=0;i<str.length();i++){
+    for(int i=0; i<str.length(); i++){
 		if(str[i]!='\n'){
 			if(str[i]!=' ' && str[i]!='\t' && str[i]!='\r') 
 			s+=str[i];
@@ -35,6 +35,11 @@ void countFile::countLine(string str,ofstream& out){
 			}
 		}
 	}
+	//文件最后无‘\n’情况 
+		if(s!=""){
+			lines++;
+			s="";
+		}
 	out<<"lines: "<<lines<<endl;
 }
 
