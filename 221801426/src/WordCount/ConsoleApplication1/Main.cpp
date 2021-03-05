@@ -18,9 +18,9 @@ int main(int argc, const char* argv[])
 
 	ofstream out(OutputFileName);
 
-	out << "characters:" << charNum << endl;
-	out << "words:" << wordsNum << endl;
-	out << "lines:" << linesNum << endl;
+	out << "characters: " << charNum << endl;
+	out << "words: " << wordsNum << endl;
+	out << "lines: " << linesNum << endl;
 	WordsPrint(InputFileName, OutputFileName, 10);
 	out.close();
 	return 0;

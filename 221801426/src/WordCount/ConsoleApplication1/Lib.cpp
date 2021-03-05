@@ -105,6 +105,6 @@ void WordsPrint(const char* filename1, const char* filename2, int num)//¥Ú”°µ•¥ 
 	out.seekp(0, ios::end);
 	for (vpsi::iterator iter = WordsVec.begin(); iter != (WordsVec.begin() + count); ++iter)
 	{
-		out << iter->first << ":" << iter->second << endl;
+		out << iter->first << ": " << iter->second << endl;
 	}
 }
