@@ -9,27 +9,20 @@
 #include<utility>
 #include<algorithm>
 using namespace std;
-//¶¨ÒåÀà 
+//å®šä¹‰ç±» 
+
 class countFile{
 	public:
-		
-		countFile();
-		//»ñµÃ×Ö·û´® £¬Ğ´Èëmap 
 		string getString(ifstream& in);
-		void loadMap(string str,map<string,int>  mp); 
-		
-		//×Ö·ûºÍĞĞÍ³¼ÆÊı 
-		int countChar(string str);
-		int countLine(string str);
-		int countWord(map<string,int>  mp);
-		//ÀûÓÃÏòÁ¿ÅÅĞò  
-		void getSort(map<string,int>  mp);
-		
-		void writeFile(ofstream& out);
-			
+		void loadMap(string str); 
+		//å­—ç¬¦å’Œè¡Œç»Ÿè®¡æ•° 
+		void countChara(string str,ofstream& out);
+		void countLine(string str,ofstream& out);
+		void countWord(ofstream& out);
+		//åˆ©ç”¨å‘é‡æ’åº 
+		vector<pair<int,string> > getSort();
+	
 	private:
-		int chars;
-		int words;
-		int lines;
-		vector<pair<int, string> > v;
+		map<string,int>	mp;
+		
 }; 
