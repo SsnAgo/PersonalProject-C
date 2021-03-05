@@ -8,7 +8,7 @@ WordCount.exe input.txt output.txt
 * 也可以通过编译器命令行输入参数来执行；
 
 ## 功能
-本项目包括以下功能：
+本项目包括以下功能：oun
 1. 统计文件的文本字符数；
 2. 统计文本的单词数；
 3. 统计文本的有效行数；
@@ -17,4 +17,4 @@ WordCount.exe input.txt output.txt
 ##  博客链接
 * [软工实践寒假作业（2/2）](https://www.cnblogs.com/Euphoria0133/p/14464026.html)
 <br/>
-备注：因为最初搭建自己的项目，在自己的项目里commit，这里次数不够，十分抱歉。
+备注：因为最初搭建自己的项目，在自己的项目里commit，这里次数不够，十分抱歉。需要验证可看项目WordCount记录。
