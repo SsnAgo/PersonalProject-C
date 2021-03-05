@@ -1,7 +1,6 @@
-#include "countFile.h"
-#include <iostream>
+#include<iostream>
+#include "CountFile.h"
 using namespace std;
-
 
 int main(int argc,char* argv[]){
 	
@@ -33,6 +32,6 @@ int main(int argc,char* argv[]){
 		out<<v[i].second<<": "<<v[i].first<<endl;
 	}
 	out.close();
-	
+	in.close() ;
 	 
 }
