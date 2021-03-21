@@ -1,0 +1,419 @@
+[08:49:08,979] [INFO] WordCountTestCasesGenerator.testCases --> 测试用例已就绪！
+[08:49:08,998] [INFO] Client.answerTestCases --> 对数程序开始执行，生成标准答案 D:\github\myTrueMorty\src
+[08:49:08,999] [INFO] JavaExecutor.compile --> 开始编译 D:\github\myTrueMorty\src\WordCount.java
+[08:49:09,000] [INFO] JavaExecutor.javac --> begin to compile javac -encoding UTF-8 -cp D:\github\myTrueMorty\src D:\github\myTrueMorty\src\*.java
+[08:49:10,426] [INFO] JavaExecutor.exec --> 开始执行 D:\github\myTrueMorty\src\WordCount.java 输入参数 D:\github\WTest2\cases\1.txt D:\github\WTest2\answers\1.txt
+[08:49:10,427] [INFO] JavaExecutor.java --> begin to exec java -classpath D:\github\myTrueMorty\src WordCount D:\github\WTest2\cases\1.txt D:\github\WTest2\answers\1.txt
+[08:49:10,777] [INFO] JavaExecutor.exec --> 开始执行 D:\github\myTrueMorty\src\WordCount.java 输入参数 D:\github\WTest2\cases\2.txt D:\github\WTest2\answers\2.txt
+[08:49:10,778] [INFO] JavaExecutor.java --> begin to exec java -classpath D:\github\myTrueMorty\src WordCount D:\github\WTest2\cases\2.txt D:\github\WTest2\answers\2.txt
+[08:49:11,160] [INFO] JavaExecutor.exec --> 开始执行 D:\github\myTrueMorty\src\WordCount.java 输入参数 D:\github\WTest2\cases\3.txt D:\github\WTest2\answers\3.txt
+[08:49:11,161] [INFO] JavaExecutor.java --> begin to exec java -classpath D:\github\myTrueMorty\src WordCount D:\github\WTest2\cases\3.txt D:\github\WTest2\answers\3.txt
+[08:49:11,654] [INFO] JavaExecutor.exec --> 开始执行 D:\github\myTrueMorty\src\WordCount.java 输入参数 D:\github\WTest2\cases\4.txt D:\github\WTest2\answers\4.txt
+[08:49:11,656] [INFO] JavaExecutor.java --> begin to exec java -classpath D:\github\myTrueMorty\src WordCount D:\github\WTest2\cases\4.txt D:\github\WTest2\answers\4.txt
+[08:49:12,069] [INFO] JavaExecutor.exec --> 开始执行 D:\github\myTrueMorty\src\WordCount.java 输入参数 D:\github\WTest2\cases\5.txt D:\github\WTest2\answers\5.txt
+[08:49:12,073] [INFO] JavaExecutor.java --> begin to exec java -classpath D:\github\myTrueMorty\src WordCount D:\github\WTest2\cases\5.txt D:\github\WTest2\answers\5.txt
+[08:49:12,594] [INFO] JavaExecutor.exec --> 开始执行 D:\github\myTrueMorty\src\WordCount.java 输入参数 D:\github\WTest2\cases\6.txt D:\github\WTest2\answers\6.txt
+[08:49:12,595] [INFO] JavaExecutor.java --> begin to exec java -classpath D:\github\myTrueMorty\src WordCount D:\github\WTest2\cases\6.txt D:\github\WTest2\answers\6.txt
+[08:49:13,124] [INFO] JavaExecutor.exec --> 开始执行 D:\github\myTrueMorty\src\WordCount.java 输入参数 D:\github\WTest2\cases\7.txt D:\github\WTest2\answers\7.txt
+[08:49:13,125] [INFO] JavaExecutor.java --> begin to exec java -classpath D:\github\myTrueMorty\src WordCount D:\github\WTest2\cases\7.txt D:\github\WTest2\answers\7.txt
+[08:49:13,440] [INFO] JavaExecutor.exec --> 开始执行 D:\github\myTrueMorty\src\WordCount.java 输入参数 D:\github\WTest2\cases\8.txt D:\github\WTest2\answers\8.txt
+[08:49:13,445] [INFO] JavaExecutor.java --> begin to exec java -classpath D:\github\myTrueMorty\src WordCount D:\github\WTest2\cases\8.txt D:\github\WTest2\answers\8.txt
+[08:49:13,976] [INFO] JavaExecutor.exec --> 开始执行 D:\github\myTrueMorty\src\WordCount.java 输入参数 D:\github\WTest2\cases\9.txt D:\github\WTest2\answers\9.txt
+[08:49:13,977] [INFO] JavaExecutor.java --> begin to exec java -classpath D:\github\myTrueMorty\src WordCount D:\github\WTest2\cases\9.txt D:\github\WTest2\answers\9.txt
+[08:49:14,447] [INFO] JavaExecutor.exec --> 开始执行 D:\github\myTrueMorty\src\WordCount.java 输入参数 D:\github\WTest2\cases\10.txt D:\github\WTest2\answers\10.txt
+[08:49:14,448] [INFO] JavaExecutor.java --> begin to exec java -classpath D:\github\myTrueMorty\src WordCount D:\github\WTest2\cases\10.txt D:\github\WTest2\answers\10.txt
+[08:49:14,929] [ERROR] Client.findExecutor --> not found executor
+[08:49:14,929] [ERROR] Client.main --> not executor found studentId: 221801408
+[08:49:14,931] [INFO] CppExecutor.compile --> 开始编译 D:\github\WTest2\PersonalProject-C\081800330\src\*.cpp 将生成 D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe
+[08:49:18,458] [INFO] Client.main --> 开始执行 学号为 081800330 的作业 执行的测试用例为： 1 
+[08:49:18,459] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe 输入参数 D:\github\WTest2\cases\1.txt D:\github\WTest2\PersonalProject-C\081800330\output\1.txt
+[08:49:18,460] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe D:\github\WTest2\cases\1.txt D:\github\WTest2\PersonalProject-C\081800330\output\1.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:18,460] [INFO] Client.main --> 学号为 081800330 的作业 执行  1 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:18,461] [INFO] Client.main --> 学号为 081800330 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\081800330\output\1.txt', answer='D:\github\WTest2\answers\1.txt', score=0}
+[08:49:18,462] [INFO] Client.main --> 开始执行 学号为 081800330 的作业 执行的测试用例为： 2 
+[08:49:18,463] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe 输入参数 D:\github\WTest2\cases\2.txt D:\github\WTest2\PersonalProject-C\081800330\output\2.txt
+[08:49:18,463] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe D:\github\WTest2\cases\2.txt D:\github\WTest2\PersonalProject-C\081800330\output\2.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:18,463] [INFO] Client.main --> 学号为 081800330 的作业 执行  2 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:18,464] [INFO] Client.main --> 学号为 081800330 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\081800330\output\2.txt', answer='D:\github\WTest2\answers\2.txt', score=0}
+[08:49:18,465] [INFO] Client.main --> 开始执行 学号为 081800330 的作业 执行的测试用例为： 3 
+[08:49:18,465] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe 输入参数 D:\github\WTest2\cases\3.txt D:\github\WTest2\PersonalProject-C\081800330\output\3.txt
+[08:49:18,466] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe D:\github\WTest2\cases\3.txt D:\github\WTest2\PersonalProject-C\081800330\output\3.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:18,466] [INFO] Client.main --> 学号为 081800330 的作业 执行  3 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:18,466] [INFO] Client.main --> 学号为 081800330 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\081800330\output\3.txt', answer='D:\github\WTest2\answers\3.txt', score=0}
+[08:49:18,467] [INFO] Client.main --> 开始执行 学号为 081800330 的作业 执行的测试用例为： 4 
+[08:49:18,467] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe 输入参数 D:\github\WTest2\cases\4.txt D:\github\WTest2\PersonalProject-C\081800330\output\4.txt
+[08:49:18,467] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe D:\github\WTest2\cases\4.txt D:\github\WTest2\PersonalProject-C\081800330\output\4.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:18,468] [INFO] Client.main --> 学号为 081800330 的作业 执行  4 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:18,468] [INFO] Client.main --> 学号为 081800330 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\081800330\output\4.txt', answer='D:\github\WTest2\answers\4.txt', score=0}
+[08:49:18,470] [INFO] Client.main --> 开始执行 学号为 081800330 的作业 执行的测试用例为： 5 
+[08:49:18,470] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe 输入参数 D:\github\WTest2\cases\5.txt D:\github\WTest2\PersonalProject-C\081800330\output\5.txt
+[08:49:18,470] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe D:\github\WTest2\cases\5.txt D:\github\WTest2\PersonalProject-C\081800330\output\5.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:18,471] [INFO] Client.main --> 学号为 081800330 的作业 执行  5 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:18,471] [INFO] Client.main --> 学号为 081800330 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\081800330\output\5.txt', answer='D:\github\WTest2\answers\5.txt', score=0}
+[08:49:18,472] [INFO] Client.main --> 开始执行 学号为 081800330 的作业 执行的测试用例为： 6 
+[08:49:18,472] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe 输入参数 D:\github\WTest2\cases\6.txt D:\github\WTest2\PersonalProject-C\081800330\output\6.txt
+[08:49:18,473] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe D:\github\WTest2\cases\6.txt D:\github\WTest2\PersonalProject-C\081800330\output\6.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:18,473] [INFO] Client.main --> 学号为 081800330 的作业 执行  6 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:18,474] [INFO] Client.main --> 学号为 081800330 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\081800330\output\6.txt', answer='D:\github\WTest2\answers\6.txt', score=0}
+[08:49:18,475] [INFO] Client.main --> 开始执行 学号为 081800330 的作业 执行的测试用例为： 7 
+[08:49:18,475] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe 输入参数 D:\github\WTest2\cases\7.txt D:\github\WTest2\PersonalProject-C\081800330\output\7.txt
+[08:49:18,475] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe D:\github\WTest2\cases\7.txt D:\github\WTest2\PersonalProject-C\081800330\output\7.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:18,475] [INFO] Client.main --> 学号为 081800330 的作业 执行  7 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:18,476] [INFO] Client.main --> 学号为 081800330 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\081800330\output\7.txt', answer='D:\github\WTest2\answers\7.txt', score=0}
+[08:49:18,477] [INFO] Client.main --> 开始执行 学号为 081800330 的作业 执行的测试用例为： 8 
+[08:49:18,477] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe 输入参数 D:\github\WTest2\cases\8.txt D:\github\WTest2\PersonalProject-C\081800330\output\8.txt
+[08:49:18,477] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe D:\github\WTest2\cases\8.txt D:\github\WTest2\PersonalProject-C\081800330\output\8.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:18,478] [INFO] Client.main --> 学号为 081800330 的作业 执行  8 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:18,478] [INFO] Client.main --> 学号为 081800330 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\081800330\output\8.txt', answer='D:\github\WTest2\answers\8.txt', score=0}
+[08:49:18,479] [INFO] Client.main --> 开始执行 学号为 081800330 的作业 执行的测试用例为： 9 
+[08:49:18,479] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe 输入参数 D:\github\WTest2\cases\9.txt D:\github\WTest2\PersonalProject-C\081800330\output\9.txt
+[08:49:18,480] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe D:\github\WTest2\cases\9.txt D:\github\WTest2\PersonalProject-C\081800330\output\9.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:18,480] [INFO] Client.main --> 学号为 081800330 的作业 执行  9 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:18,480] [INFO] Client.main --> 学号为 081800330 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\081800330\output\9.txt', answer='D:\github\WTest2\answers\9.txt', score=0}
+[08:49:18,481] [INFO] Client.main --> 开始执行 学号为 081800330 的作业 执行的测试用例为： 10 
+[08:49:18,481] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe 输入参数 D:\github\WTest2\cases\10.txt D:\github\WTest2\PersonalProject-C\081800330\output\10.txt
+[08:49:18,482] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe D:\github\WTest2\cases\10.txt D:\github\WTest2\PersonalProject-C\081800330\output\10.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\081800330\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:18,482] [INFO] Client.main --> 学号为 081800330 的作业 执行  10 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:18,482] [INFO] Client.main --> 学号为 081800330 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\081800330\output\10.txt', answer='D:\github\WTest2\answers\10.txt', score=0}
+[08:49:18,483] [INFO] CppExecutor.compile --> 开始编译 D:\github\WTest2\PersonalProject-C\221801217\src\*.cpp 将生成 D:\github\WTest2\PersonalProject-C\221801217\src\WordCount.exe
+[08:49:19,815] [INFO] Client.main --> 开始执行 学号为 221801217 的作业 执行的测试用例为： 1 
+[08:49:19,815] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801217\src\WordCount.exe 输入参数 D:\github\WTest2\cases\1.txt D:\github\WTest2\PersonalProject-C\221801217\output\1.txt
+[08:49:20,239] [INFO] Client.main --> 学号为 221801217 的作业 执行  1 用例完毕， 执行时间为 424ms 接下来开始测评...
+[08:49:20,240] [INFO] Client.main --> 学号为 221801217 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801217\output\1.txt', answer='D:\github\WTest2\answers\1.txt', score=0}
+[08:49:20,241] [INFO] Client.main --> 开始执行 学号为 221801217 的作业 执行的测试用例为： 2 
+[08:49:20,241] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801217\src\WordCount.exe 输入参数 D:\github\WTest2\cases\2.txt D:\github\WTest2\PersonalProject-C\221801217\output\2.txt
+[08:49:20,578] [INFO] Client.main --> 学号为 221801217 的作业 执行  2 用例完毕， 执行时间为 337ms 接下来开始测评...
+[08:49:20,579] [INFO] Client.main --> 学号为 221801217 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801217\output\2.txt', answer='D:\github\WTest2\answers\2.txt', score=5}
+[08:49:20,581] [INFO] Client.main --> 开始执行 学号为 221801217 的作业 执行的测试用例为： 3 
+[08:49:20,581] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801217\src\WordCount.exe 输入参数 D:\github\WTest2\cases\3.txt D:\github\WTest2\PersonalProject-C\221801217\output\3.txt
+[08:49:20,979] [INFO] Client.main --> 学号为 221801217 的作业 执行  3 用例完毕， 执行时间为 398ms 接下来开始测评...
+[08:49:20,980] [INFO] Client.main --> 学号为 221801217 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801217\output\3.txt', answer='D:\github\WTest2\answers\3.txt', score=0}
+[08:49:20,981] [INFO] Client.main --> 开始执行 学号为 221801217 的作业 执行的测试用例为： 4 
+[08:49:20,982] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801217\src\WordCount.exe 输入参数 D:\github\WTest2\cases\4.txt D:\github\WTest2\PersonalProject-C\221801217\output\4.txt
+[08:49:21,188] [INFO] Client.main --> 学号为 221801217 的作业 执行  4 用例完毕， 执行时间为 206ms 接下来开始测评...
+[08:49:21,191] [INFO] Client.main --> 学号为 221801217 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801217\output\4.txt', answer='D:\github\WTest2\answers\4.txt', score=5}
+[08:49:21,193] [INFO] Client.main --> 开始执行 学号为 221801217 的作业 执行的测试用例为： 5 
+[08:49:21,193] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801217\src\WordCount.exe 输入参数 D:\github\WTest2\cases\5.txt D:\github\WTest2\PersonalProject-C\221801217\output\5.txt
+[08:49:21,509] [INFO] Client.main --> 学号为 221801217 的作业 执行  5 用例完毕， 执行时间为 316ms 接下来开始测评...
+[08:49:21,509] [INFO] Client.main --> 学号为 221801217 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801217\output\5.txt', answer='D:\github\WTest2\answers\5.txt', score=5}
+[08:49:21,510] [INFO] Client.main --> 开始执行 学号为 221801217 的作业 执行的测试用例为： 6 
+[08:49:21,510] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801217\src\WordCount.exe 输入参数 D:\github\WTest2\cases\6.txt D:\github\WTest2\PersonalProject-C\221801217\output\6.txt
+[08:49:21,864] [INFO] Client.main --> 学号为 221801217 的作业 执行  6 用例完毕， 执行时间为 354ms 接下来开始测评...
+[08:49:21,864] [INFO] Client.main --> 学号为 221801217 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801217\output\6.txt', answer='D:\github\WTest2\answers\6.txt', score=0}
+[08:49:21,865] [INFO] Client.main --> 开始执行 学号为 221801217 的作业 执行的测试用例为： 7 
+[08:49:21,866] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801217\src\WordCount.exe 输入参数 D:\github\WTest2\cases\7.txt D:\github\WTest2\PersonalProject-C\221801217\output\7.txt
+[08:49:21,988] [INFO] Client.main --> 学号为 221801217 的作业 执行  7 用例完毕， 执行时间为 122ms 接下来开始测评...
+[08:49:21,989] [INFO] Client.main --> 学号为 221801217 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801217\output\7.txt', answer='D:\github\WTest2\answers\7.txt', score=5}
+[08:49:21,990] [INFO] Client.main --> 开始执行 学号为 221801217 的作业 执行的测试用例为： 8 
+[08:49:21,991] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801217\src\WordCount.exe 输入参数 D:\github\WTest2\cases\8.txt D:\github\WTest2\PersonalProject-C\221801217\output\8.txt
+[08:49:22,182] [INFO] Client.main --> 学号为 221801217 的作业 执行  8 用例完毕， 执行时间为 191ms 接下来开始测评...
+[08:49:22,183] [INFO] Client.main --> 学号为 221801217 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801217\output\8.txt', answer='D:\github\WTest2\answers\8.txt', score=0}
+[08:49:22,184] [INFO] Client.main --> 开始执行 学号为 221801217 的作业 执行的测试用例为： 9 
+[08:49:22,184] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801217\src\WordCount.exe 输入参数 D:\github\WTest2\cases\9.txt D:\github\WTest2\PersonalProject-C\221801217\output\9.txt
+[08:49:22,519] [INFO] Client.main --> 学号为 221801217 的作业 执行  9 用例完毕， 执行时间为 335ms 接下来开始测评...
+[08:49:22,520] [INFO] Client.main --> 学号为 221801217 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801217\output\9.txt', answer='D:\github\WTest2\answers\9.txt', score=0}
+[08:49:22,521] [INFO] Client.main --> 开始执行 学号为 221801217 的作业 执行的测试用例为： 10 
+[08:49:22,521] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801217\src\WordCount.exe 输入参数 D:\github\WTest2\cases\10.txt D:\github\WTest2\PersonalProject-C\221801217\output\10.txt
+[08:49:22,900] [INFO] Client.main --> 学号为 221801217 的作业 执行  10 用例完毕， 执行时间为 379ms 接下来开始测评...
+[08:49:22,902] [INFO] Client.main --> 学号为 221801217 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801217\output\10.txt', answer='D:\github\WTest2\answers\10.txt', score=5}
+[08:49:22,905] [ERROR] Client.findExecutor --> not found executor
+[08:49:22,905] [ERROR] Client.main --> not executor found studentId: 221801426
+[08:49:22,907] [ERROR] Client.findExecutor --> not found executor
+[08:49:22,907] [ERROR] Client.main --> not executor found studentId: 221801307
+[08:49:22,908] [INFO] CppExecutor.compile --> 开始编译 D:\github\WTest2\PersonalProject-C\221801417\src\*.cpp 将生成 D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe
+[08:49:23,114] [INFO] Client.main --> 开始执行 学号为 221801417 的作业 执行的测试用例为： 1 
+[08:49:23,114] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe 输入参数 D:\github\WTest2\cases\1.txt D:\github\WTest2\PersonalProject-C\221801417\output\1.txt
+[08:49:23,115] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe D:\github\WTest2\cases\1.txt D:\github\WTest2\PersonalProject-C\221801417\output\1.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,115] [INFO] Client.main --> 学号为 221801417 的作业 执行  1 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,115] [INFO] Client.main --> 学号为 221801417 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801417\output\1.txt', answer='D:\github\WTest2\answers\1.txt', score=0}
+[08:49:23,116] [INFO] Client.main --> 开始执行 学号为 221801417 的作业 执行的测试用例为： 2 
+[08:49:23,116] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe 输入参数 D:\github\WTest2\cases\2.txt D:\github\WTest2\PersonalProject-C\221801417\output\2.txt
+[08:49:23,117] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe D:\github\WTest2\cases\2.txt D:\github\WTest2\PersonalProject-C\221801417\output\2.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,117] [INFO] Client.main --> 学号为 221801417 的作业 执行  2 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,117] [INFO] Client.main --> 学号为 221801417 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801417\output\2.txt', answer='D:\github\WTest2\answers\2.txt', score=0}
+[08:49:23,118] [INFO] Client.main --> 开始执行 学号为 221801417 的作业 执行的测试用例为： 3 
+[08:49:23,118] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe 输入参数 D:\github\WTest2\cases\3.txt D:\github\WTest2\PersonalProject-C\221801417\output\3.txt
+[08:49:23,119] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe D:\github\WTest2\cases\3.txt D:\github\WTest2\PersonalProject-C\221801417\output\3.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,119] [INFO] Client.main --> 学号为 221801417 的作业 执行  3 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,119] [INFO] Client.main --> 学号为 221801417 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801417\output\3.txt', answer='D:\github\WTest2\answers\3.txt', score=0}
+[08:49:23,120] [INFO] Client.main --> 开始执行 学号为 221801417 的作业 执行的测试用例为： 4 
+[08:49:23,120] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe 输入参数 D:\github\WTest2\cases\4.txt D:\github\WTest2\PersonalProject-C\221801417\output\4.txt
+[08:49:23,120] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe D:\github\WTest2\cases\4.txt D:\github\WTest2\PersonalProject-C\221801417\output\4.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,121] [INFO] Client.main --> 学号为 221801417 的作业 执行  4 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,121] [INFO] Client.main --> 学号为 221801417 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801417\output\4.txt', answer='D:\github\WTest2\answers\4.txt', score=0}
+[08:49:23,122] [INFO] Client.main --> 开始执行 学号为 221801417 的作业 执行的测试用例为： 5 
+[08:49:23,122] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe 输入参数 D:\github\WTest2\cases\5.txt D:\github\WTest2\PersonalProject-C\221801417\output\5.txt
+[08:49:23,122] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe D:\github\WTest2\cases\5.txt D:\github\WTest2\PersonalProject-C\221801417\output\5.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,122] [INFO] Client.main --> 学号为 221801417 的作业 执行  5 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,123] [INFO] Client.main --> 学号为 221801417 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801417\output\5.txt', answer='D:\github\WTest2\answers\5.txt', score=0}
+[08:49:23,123] [INFO] Client.main --> 开始执行 学号为 221801417 的作业 执行的测试用例为： 6 
+[08:49:23,123] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe 输入参数 D:\github\WTest2\cases\6.txt D:\github\WTest2\PersonalProject-C\221801417\output\6.txt
+[08:49:23,124] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe D:\github\WTest2\cases\6.txt D:\github\WTest2\PersonalProject-C\221801417\output\6.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,124] [INFO] Client.main --> 学号为 221801417 的作业 执行  6 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,124] [INFO] Client.main --> 学号为 221801417 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801417\output\6.txt', answer='D:\github\WTest2\answers\6.txt', score=0}
+[08:49:23,125] [INFO] Client.main --> 开始执行 学号为 221801417 的作业 执行的测试用例为： 7 
+[08:49:23,126] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe 输入参数 D:\github\WTest2\cases\7.txt D:\github\WTest2\PersonalProject-C\221801417\output\7.txt
+[08:49:23,126] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe D:\github\WTest2\cases\7.txt D:\github\WTest2\PersonalProject-C\221801417\output\7.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,126] [INFO] Client.main --> 学号为 221801417 的作业 执行  7 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,127] [INFO] Client.main --> 学号为 221801417 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801417\output\7.txt', answer='D:\github\WTest2\answers\7.txt', score=0}
+[08:49:23,128] [INFO] Client.main --> 开始执行 学号为 221801417 的作业 执行的测试用例为： 8 
+[08:49:23,128] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe 输入参数 D:\github\WTest2\cases\8.txt D:\github\WTest2\PersonalProject-C\221801417\output\8.txt
+[08:49:23,128] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe D:\github\WTest2\cases\8.txt D:\github\WTest2\PersonalProject-C\221801417\output\8.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,128] [INFO] Client.main --> 学号为 221801417 的作业 执行  8 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,128] [INFO] Client.main --> 学号为 221801417 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801417\output\8.txt', answer='D:\github\WTest2\answers\8.txt', score=0}
+[08:49:23,129] [INFO] Client.main --> 开始执行 学号为 221801417 的作业 执行的测试用例为： 9 
+[08:49:23,129] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe 输入参数 D:\github\WTest2\cases\9.txt D:\github\WTest2\PersonalProject-C\221801417\output\9.txt
+[08:49:23,130] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe D:\github\WTest2\cases\9.txt D:\github\WTest2\PersonalProject-C\221801417\output\9.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,130] [INFO] Client.main --> 学号为 221801417 的作业 执行  9 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,130] [INFO] Client.main --> 学号为 221801417 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801417\output\9.txt', answer='D:\github\WTest2\answers\9.txt', score=0}
+[08:49:23,131] [INFO] Client.main --> 开始执行 学号为 221801417 的作业 执行的测试用例为： 10 
+[08:49:23,131] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe 输入参数 D:\github\WTest2\cases\10.txt D:\github\WTest2\PersonalProject-C\221801417\output\10.txt
+[08:49:23,131] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe D:\github\WTest2\cases\10.txt D:\github\WTest2\PersonalProject-C\221801417\output\10.txt  Cannot run program "D:\github\WTest2\PersonalProject-C\221801417\src\WordCount.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,132] [INFO] Client.main --> 学号为 221801417 的作业 执行  10 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,132] [INFO] Client.main --> 学号为 221801417 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801417\output\10.txt', answer='D:\github\WTest2\answers\10.txt', score=0}
+[08:49:23,133] [ERROR] Client.main --> not executor found studentId: 221801433
+[08:49:23,147] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 1 
+[08:49:23,147] [INFO] PythonExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py 输入参数 D:\github\WTest2\cases\1.txt D:\github\WTest2\PersonalProject-C\111801429\output\1.txt
+[08:49:23,147] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\1.txt D:\github\WTest2\PersonalProject-C\111801429\output\1.txt
+[08:49:23,147] [ERROR] CmdUtil.cmd --> execute cmd error C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\1.txt D:\github\WTest2\PersonalProject-C\111801429\output\1.txt  Cannot run program "C:\Program": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,148] [INFO] Client.main --> 学号为 111801429 的作业 执行  1 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,148] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\111801429\output\1.txt', answer='D:\github\WTest2\answers\1.txt', score=0}
+[08:49:23,149] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 2 
+[08:49:23,149] [INFO] PythonExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py 输入参数 D:\github\WTest2\cases\2.txt D:\github\WTest2\PersonalProject-C\111801429\output\2.txt
+[08:49:23,149] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\2.txt D:\github\WTest2\PersonalProject-C\111801429\output\2.txt
+[08:49:23,150] [ERROR] CmdUtil.cmd --> execute cmd error C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\2.txt D:\github\WTest2\PersonalProject-C\111801429\output\2.txt  Cannot run program "C:\Program": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,150] [INFO] Client.main --> 学号为 111801429 的作业 执行  2 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,151] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\111801429\output\2.txt', answer='D:\github\WTest2\answers\2.txt', score=0}
+[08:49:23,151] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 3 
+[08:49:23,151] [INFO] PythonExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py 输入参数 D:\github\WTest2\cases\3.txt D:\github\WTest2\PersonalProject-C\111801429\output\3.txt
+[08:49:23,151] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\3.txt D:\github\WTest2\PersonalProject-C\111801429\output\3.txt
+[08:49:23,152] [ERROR] CmdUtil.cmd --> execute cmd error C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\3.txt D:\github\WTest2\PersonalProject-C\111801429\output\3.txt  Cannot run program "C:\Program": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,152] [INFO] Client.main --> 学号为 111801429 的作业 执行  3 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,153] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\111801429\output\3.txt', answer='D:\github\WTest2\answers\3.txt', score=0}
+[08:49:23,154] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 4 
+[08:49:23,154] [INFO] PythonExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py 输入参数 D:\github\WTest2\cases\4.txt D:\github\WTest2\PersonalProject-C\111801429\output\4.txt
+[08:49:23,154] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\4.txt D:\github\WTest2\PersonalProject-C\111801429\output\4.txt
+[08:49:23,155] [ERROR] CmdUtil.cmd --> execute cmd error C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\4.txt D:\github\WTest2\PersonalProject-C\111801429\output\4.txt  Cannot run program "C:\Program": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,155] [INFO] Client.main --> 学号为 111801429 的作业 执行  4 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,155] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\111801429\output\4.txt', answer='D:\github\WTest2\answers\4.txt', score=0}
+[08:49:23,157] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 5 
+[08:49:23,157] [INFO] PythonExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py 输入参数 D:\github\WTest2\cases\5.txt D:\github\WTest2\PersonalProject-C\111801429\output\5.txt
+[08:49:23,157] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\5.txt D:\github\WTest2\PersonalProject-C\111801429\output\5.txt
+[08:49:23,158] [ERROR] CmdUtil.cmd --> execute cmd error C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\5.txt D:\github\WTest2\PersonalProject-C\111801429\output\5.txt  Cannot run program "C:\Program": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,158] [INFO] Client.main --> 学号为 111801429 的作业 执行  5 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,159] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\111801429\output\5.txt', answer='D:\github\WTest2\answers\5.txt', score=0}
+[08:49:23,160] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 6 
+[08:49:23,160] [INFO] PythonExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py 输入参数 D:\github\WTest2\cases\6.txt D:\github\WTest2\PersonalProject-C\111801429\output\6.txt
+[08:49:23,160] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\6.txt D:\github\WTest2\PersonalProject-C\111801429\output\6.txt
+[08:49:23,160] [ERROR] CmdUtil.cmd --> execute cmd error C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\6.txt D:\github\WTest2\PersonalProject-C\111801429\output\6.txt  Cannot run program "C:\Program": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,160] [INFO] Client.main --> 学号为 111801429 的作业 执行  6 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,161] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\111801429\output\6.txt', answer='D:\github\WTest2\answers\6.txt', score=0}
+[08:49:23,161] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 7 
+[08:49:23,162] [INFO] PythonExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py 输入参数 D:\github\WTest2\cases\7.txt D:\github\WTest2\PersonalProject-C\111801429\output\7.txt
+[08:49:23,162] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\7.txt D:\github\WTest2\PersonalProject-C\111801429\output\7.txt
+[08:49:23,162] [ERROR] CmdUtil.cmd --> execute cmd error C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\7.txt D:\github\WTest2\PersonalProject-C\111801429\output\7.txt  Cannot run program "C:\Program": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,162] [INFO] Client.main --> 学号为 111801429 的作业 执行  7 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,163] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\111801429\output\7.txt', answer='D:\github\WTest2\answers\7.txt', score=0}
+[08:49:23,163] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 8 
+[08:49:23,163] [INFO] PythonExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py 输入参数 D:\github\WTest2\cases\8.txt D:\github\WTest2\PersonalProject-C\111801429\output\8.txt
+[08:49:23,164] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\8.txt D:\github\WTest2\PersonalProject-C\111801429\output\8.txt
+[08:49:23,164] [ERROR] CmdUtil.cmd --> execute cmd error C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\8.txt D:\github\WTest2\PersonalProject-C\111801429\output\8.txt  Cannot run program "C:\Program": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,164] [INFO] Client.main --> 学号为 111801429 的作业 执行  8 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,164] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\111801429\output\8.txt', answer='D:\github\WTest2\answers\8.txt', score=0}
+[08:49:23,165] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 9 
+[08:49:23,165] [INFO] PythonExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py 输入参数 D:\github\WTest2\cases\9.txt D:\github\WTest2\PersonalProject-C\111801429\output\9.txt
+[08:49:23,165] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\9.txt D:\github\WTest2\PersonalProject-C\111801429\output\9.txt
+[08:49:23,166] [ERROR] CmdUtil.cmd --> execute cmd error C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\9.txt D:\github\WTest2\PersonalProject-C\111801429\output\9.txt  Cannot run program "C:\Program": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,166] [INFO] Client.main --> 学号为 111801429 的作业 执行  9 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,167] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\111801429\output\9.txt', answer='D:\github\WTest2\answers\9.txt', score=0}
+[08:49:23,168] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 10 
+[08:49:23,170] [INFO] PythonExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py 输入参数 D:\github\WTest2\cases\10.txt D:\github\WTest2\PersonalProject-C\111801429\output\10.txt
+[08:49:23,170] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\10.txt D:\github\WTest2\PersonalProject-C\111801429\output\10.txt
+[08:49:23,171] [ERROR] CmdUtil.cmd --> execute cmd error C:\Program Files\Python39\python.exe D:\github\WTest2\PersonalProject-C\111801429\src\WordCount.py D:\github\WTest2\cases\10.txt D:\github\WTest2\PersonalProject-C\111801429\output\10.txt  Cannot run program "C:\Program": CreateProcess error=2, 系统找不到指定的文件。 
+[08:49:23,171] [INFO] Client.main --> 学号为 111801429 的作业 执行  10 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:49:23,172] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\111801429\output\10.txt', answer='D:\github\WTest2\answers\10.txt', score=0}
+[08:49:23,173] [INFO] CppExecutor.compile --> 开始编译 D:\github\WTest2\PersonalProject-C\221801133\src\*.cpp 将生成 D:\github\WTest2\PersonalProject-C\221801133\src\WordCount.exe
+[08:49:24,664] [INFO] Client.main --> 开始执行 学号为 221801133 的作业 执行的测试用例为： 1 
+[08:49:24,664] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801133\src\WordCount.exe 输入参数 D:\github\WTest2\cases\1.txt D:\github\WTest2\PersonalProject-C\221801133\output\1.txt
+[08:49:25,160] [INFO] Client.main --> 学号为 221801133 的作业 执行  1 用例完毕， 执行时间为 496ms 接下来开始测评...
+[08:49:25,161] [INFO] Client.main --> 学号为 221801133 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801133\output\1.txt', answer='D:\github\WTest2\answers\1.txt', score=2}
+[08:49:25,161] [INFO] Client.main --> 开始执行 学号为 221801133 的作业 执行的测试用例为： 2 
+[08:49:25,162] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801133\src\WordCount.exe 输入参数 D:\github\WTest2\cases\2.txt D:\github\WTest2\PersonalProject-C\221801133\output\2.txt
+[08:49:25,516] [INFO] Client.main --> 学号为 221801133 的作业 执行  2 用例完毕， 执行时间为 354ms 接下来开始测评...
+[08:49:25,517] [INFO] Client.main --> 学号为 221801133 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801133\output\2.txt', answer='D:\github\WTest2\answers\2.txt', score=7}
+[08:49:25,518] [INFO] Client.main --> 开始执行 学号为 221801133 的作业 执行的测试用例为： 3 
+[08:49:25,518] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801133\src\WordCount.exe 输入参数 D:\github\WTest2\cases\3.txt D:\github\WTest2\PersonalProject-C\221801133\output\3.txt
+[08:49:25,972] [INFO] Client.main --> 学号为 221801133 的作业 执行  3 用例完毕， 执行时间为 454ms 接下来开始测评...
+[08:49:25,973] [INFO] Client.main --> 学号为 221801133 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801133\output\3.txt', answer='D:\github\WTest2\answers\3.txt', score=2}
+[08:49:25,974] [INFO] Client.main --> 开始执行 学号为 221801133 的作业 执行的测试用例为： 4 
+[08:49:25,974] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801133\src\WordCount.exe 输入参数 D:\github\WTest2\cases\4.txt D:\github\WTest2\PersonalProject-C\221801133\output\4.txt
+[08:49:26,185] [INFO] Client.main --> 学号为 221801133 的作业 执行  4 用例完毕， 执行时间为 211ms 接下来开始测评...
+[08:49:26,186] [INFO] Client.main --> 学号为 221801133 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801133\output\4.txt', answer='D:\github\WTest2\answers\4.txt', score=7}
+[08:49:26,186] [INFO] Client.main --> 开始执行 学号为 221801133 的作业 执行的测试用例为： 5 
+[08:49:26,186] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801133\src\WordCount.exe 输入参数 D:\github\WTest2\cases\5.txt D:\github\WTest2\PersonalProject-C\221801133\output\5.txt
+[08:49:26,548] [INFO] Client.main --> 学号为 221801133 的作业 执行  5 用例完毕， 执行时间为 362ms 接下来开始测评...
+[08:49:26,549] [INFO] Client.main --> 学号为 221801133 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801133\output\5.txt', answer='D:\github\WTest2\answers\5.txt', score=7}
+[08:49:26,550] [INFO] Client.main --> 开始执行 学号为 221801133 的作业 执行的测试用例为： 6 
+[08:49:26,551] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801133\src\WordCount.exe 输入参数 D:\github\WTest2\cases\6.txt D:\github\WTest2\PersonalProject-C\221801133\output\6.txt
+[08:49:26,968] [INFO] Client.main --> 学号为 221801133 的作业 执行  6 用例完毕， 执行时间为 416ms 接下来开始测评...
+[08:49:26,968] [INFO] Client.main --> 学号为 221801133 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801133\output\6.txt', answer='D:\github\WTest2\answers\6.txt', score=2}
+[08:49:26,970] [INFO] Client.main --> 开始执行 学号为 221801133 的作业 执行的测试用例为： 7 
+[08:49:26,970] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801133\src\WordCount.exe 输入参数 D:\github\WTest2\cases\7.txt D:\github\WTest2\PersonalProject-C\221801133\output\7.txt
+[08:49:27,090] [INFO] Client.main --> 学号为 221801133 的作业 执行  7 用例完毕， 执行时间为 120ms 接下来开始测评...
+[08:49:27,090] [INFO] Client.main --> 学号为 221801133 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801133\output\7.txt', answer='D:\github\WTest2\answers\7.txt', score=7}
+[08:49:27,091] [INFO] Client.main --> 开始执行 学号为 221801133 的作业 执行的测试用例为： 8 
+[08:49:27,091] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801133\src\WordCount.exe 输入参数 D:\github\WTest2\cases\8.txt D:\github\WTest2\PersonalProject-C\221801133\output\8.txt
+[08:49:27,330] [INFO] Client.main --> 学号为 221801133 的作业 执行  8 用例完毕， 执行时间为 239ms 接下来开始测评...
+[08:49:27,330] [INFO] Client.main --> 学号为 221801133 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801133\output\8.txt', answer='D:\github\WTest2\answers\8.txt', score=2}
+[08:49:27,331] [INFO] Client.main --> 开始执行 学号为 221801133 的作业 执行的测试用例为： 9 
+[08:49:27,331] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801133\src\WordCount.exe 输入参数 D:\github\WTest2\cases\9.txt D:\github\WTest2\PersonalProject-C\221801133\output\9.txt
+[08:49:27,780] [INFO] Client.main --> 学号为 221801133 的作业 执行  9 用例完毕， 执行时间为 449ms 接下来开始测评...
+[08:49:27,780] [INFO] Client.main --> 学号为 221801133 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801133\output\9.txt', answer='D:\github\WTest2\answers\9.txt', score=2}
+[08:49:27,781] [INFO] Client.main --> 开始执行 学号为 221801133 的作业 执行的测试用例为： 10 
+[08:49:27,782] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801133\src\WordCount.exe 输入参数 D:\github\WTest2\cases\10.txt D:\github\WTest2\PersonalProject-C\221801133\output\10.txt
+[08:49:28,314] [INFO] Client.main --> 学号为 221801133 的作业 执行  10 用例完毕， 执行时间为 532ms 接下来开始测评...
+[08:49:28,314] [INFO] Client.main --> 学号为 221801133 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801133\output\10.txt', answer='D:\github\WTest2\answers\10.txt', score=2}
+[08:49:28,315] [INFO] CppExecutor.compile --> 开始编译 D:\github\WTest2\PersonalProject-C\221801134\src\*.cpp 将生成 D:\github\WTest2\PersonalProject-C\221801134\src\WordCount.exe
+[08:49:29,818] [INFO] Client.main --> 开始执行 学号为 221801134 的作业 执行的测试用例为： 1 
+[08:49:29,818] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801134\src\WordCount.exe 输入参数 D:\github\WTest2\cases\1.txt D:\github\WTest2\PersonalProject-C\221801134\output\1.txt
+[08:49:30,187] [INFO] Client.main --> 学号为 221801134 的作业 执行  1 用例完毕， 执行时间为 368ms 接下来开始测评...
+[08:49:30,188] [INFO] Client.main --> 学号为 221801134 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801134\output\1.txt', answer='D:\github\WTest2\answers\1.txt', score=2}
+[08:49:30,189] [INFO] Client.main --> 开始执行 学号为 221801134 的作业 执行的测试用例为： 2 
+[08:49:30,189] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801134\src\WordCount.exe 输入参数 D:\github\WTest2\cases\2.txt D:\github\WTest2\PersonalProject-C\221801134\output\2.txt
+[08:49:30,382] [INFO] Client.main --> 学号为 221801134 的作业 执行  2 用例完毕， 执行时间为 193ms 接下来开始测评...
+[08:49:30,383] [INFO] Client.main --> 学号为 221801134 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801134\output\2.txt', answer='D:\github\WTest2\answers\2.txt', score=2}
+[08:49:30,384] [INFO] Client.main --> 开始执行 学号为 221801134 的作业 执行的测试用例为： 3 
+[08:49:30,384] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801134\src\WordCount.exe 输入参数 D:\github\WTest2\cases\3.txt D:\github\WTest2\PersonalProject-C\221801134\output\3.txt
+[08:49:30,589] [INFO] Client.main --> 学号为 221801134 的作业 执行  3 用例完毕， 执行时间为 205ms 接下来开始测评...
+[08:49:30,590] [INFO] Client.main --> 学号为 221801134 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801134\output\3.txt', answer='D:\github\WTest2\answers\3.txt', score=2}
+[08:49:30,590] [INFO] Client.main --> 开始执行 学号为 221801134 的作业 执行的测试用例为： 4 
+[08:49:30,591] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801134\src\WordCount.exe 输入参数 D:\github\WTest2\cases\4.txt D:\github\WTest2\PersonalProject-C\221801134\output\4.txt
+[08:49:30,717] [INFO] Client.main --> 学号为 221801134 的作业 执行  4 用例完毕， 执行时间为 125ms 接下来开始测评...
+[08:49:30,717] [INFO] Client.main --> 学号为 221801134 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801134\output\4.txt', answer='D:\github\WTest2\answers\4.txt', score=2}
+[08:49:30,718] [INFO] Client.main --> 开始执行 学号为 221801134 的作业 执行的测试用例为： 5 
+[08:49:30,718] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801134\src\WordCount.exe 输入参数 D:\github\WTest2\cases\5.txt D:\github\WTest2\PersonalProject-C\221801134\output\5.txt
+[08:49:30,929] [INFO] Client.main --> 学号为 221801134 的作业 执行  5 用例完毕， 执行时间为 210ms 接下来开始测评...
+[08:49:30,930] [INFO] Client.main --> 学号为 221801134 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801134\output\5.txt', answer='D:\github\WTest2\answers\5.txt', score=2}
+[08:49:30,931] [INFO] Client.main --> 开始执行 学号为 221801134 的作业 执行的测试用例为： 6 
+[08:49:30,931] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801134\src\WordCount.exe 输入参数 D:\github\WTest2\cases\6.txt D:\github\WTest2\PersonalProject-C\221801134\output\6.txt
+[08:49:31,142] [INFO] Client.main --> 学号为 221801134 的作业 执行  6 用例完毕， 执行时间为 211ms 接下来开始测评...
+[08:49:31,143] [INFO] Client.main --> 学号为 221801134 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801134\output\6.txt', answer='D:\github\WTest2\answers\6.txt', score=2}
+[08:49:31,144] [INFO] Client.main --> 开始执行 学号为 221801134 的作业 执行的测试用例为： 7 
+[08:49:31,144] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801134\src\WordCount.exe 输入参数 D:\github\WTest2\cases\7.txt D:\github\WTest2\PersonalProject-C\221801134\output\7.txt
+[08:49:31,222] [INFO] Client.main --> 学号为 221801134 的作业 执行  7 用例完毕， 执行时间为 78ms 接下来开始测评...
+[08:49:31,222] [INFO] Client.main --> 学号为 221801134 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801134\output\7.txt', answer='D:\github\WTest2\answers\7.txt', score=2}
+[08:49:31,223] [INFO] Client.main --> 开始执行 学号为 221801134 的作业 执行的测试用例为： 8 
+[08:49:31,223] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801134\src\WordCount.exe 输入参数 D:\github\WTest2\cases\8.txt D:\github\WTest2\PersonalProject-C\221801134\output\8.txt
+[08:49:31,355] [INFO] Client.main --> 学号为 221801134 的作业 执行  8 用例完毕， 执行时间为 132ms 接下来开始测评...
+[08:49:31,356] [INFO] Client.main --> 学号为 221801134 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801134\output\8.txt', answer='D:\github\WTest2\answers\8.txt', score=2}
+[08:49:31,357] [INFO] Client.main --> 开始执行 学号为 221801134 的作业 执行的测试用例为： 9 
+[08:49:31,357] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801134\src\WordCount.exe 输入参数 D:\github\WTest2\cases\9.txt D:\github\WTest2\PersonalProject-C\221801134\output\9.txt
+[08:49:31,612] [INFO] Client.main --> 学号为 221801134 的作业 执行  9 用例完毕， 执行时间为 254ms 接下来开始测评...
+[08:49:31,612] [INFO] Client.main --> 学号为 221801134 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801134\output\9.txt', answer='D:\github\WTest2\answers\9.txt', score=2}
+[08:49:31,614] [INFO] Client.main --> 开始执行 学号为 221801134 的作业 执行的测试用例为： 10 
+[08:49:31,616] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest2\PersonalProject-C\221801134\src\WordCount.exe 输入参数 D:\github\WTest2\cases\10.txt D:\github\WTest2\PersonalProject-C\221801134\output\10.txt
+[08:49:31,866] [INFO] Client.main --> 学号为 221801134 的作业 执行  10 用例完毕， 执行时间为 249ms 接下来开始测评...
+[08:49:31,866] [INFO] Client.main --> 学号为 221801134 的作业 测评结果是：Result{src='null', result='D:\github\WTest2\PersonalProject-C\221801134\output\10.txt', answer='D:\github\WTest2\answers\10.txt', score=2}
+[08:58:40,803] [INFO] CppExecutor.compile --> 开始编译 D:\github\WTest\PersonalProject-C\221801307\src\*.cpp 将生成 D:\github\WTest\PersonalProject-C\221801307\src\main.exe
+[08:58:43,944] [INFO] Client.main --> 开始执行 学号为 221801307 的作业 执行的测试用例为： 1 
+[08:58:43,944] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest\PersonalProject-C\221801307\src\main.exe 输入参数 D:\github\WTest\cases\1.txt D:\github\WTest\PersonalProject-C\221801307\output\1.txt
+[08:58:43,945] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest\PersonalProject-C\221801307\src\main.exe D:\github\WTest\cases\1.txt D:\github\WTest\PersonalProject-C\221801307\output\1.txt  Cannot run program "D:\github\WTest\PersonalProject-C\221801307\src\main.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:58:43,945] [INFO] Client.main --> 学号为 221801307 的作业 执行  1 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:58:43,946] [INFO] Client.main --> 学号为 221801307 的作业 测评结果是：Result{src='null', result='D:\github\WTest\PersonalProject-C\221801307\output\1.txt', answer='D:\github\WTest\answers\1.txt', score=0}
+[08:58:43,948] [INFO] Client.main --> 开始执行 学号为 221801307 的作业 执行的测试用例为： 2 
+[08:58:43,948] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest\PersonalProject-C\221801307\src\main.exe 输入参数 D:\github\WTest\cases\2.txt D:\github\WTest\PersonalProject-C\221801307\output\2.txt
+[08:58:43,948] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest\PersonalProject-C\221801307\src\main.exe D:\github\WTest\cases\2.txt D:\github\WTest\PersonalProject-C\221801307\output\2.txt  Cannot run program "D:\github\WTest\PersonalProject-C\221801307\src\main.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:58:43,949] [INFO] Client.main --> 学号为 221801307 的作业 执行  2 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:58:43,949] [INFO] Client.main --> 学号为 221801307 的作业 测评结果是：Result{src='null', result='D:\github\WTest\PersonalProject-C\221801307\output\2.txt', answer='D:\github\WTest\answers\2.txt', score=0}
+[08:58:43,950] [INFO] Client.main --> 开始执行 学号为 221801307 的作业 执行的测试用例为： 3 
+[08:58:43,950] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest\PersonalProject-C\221801307\src\main.exe 输入参数 D:\github\WTest\cases\3.txt D:\github\WTest\PersonalProject-C\221801307\output\3.txt
+[08:58:43,951] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest\PersonalProject-C\221801307\src\main.exe D:\github\WTest\cases\3.txt D:\github\WTest\PersonalProject-C\221801307\output\3.txt  Cannot run program "D:\github\WTest\PersonalProject-C\221801307\src\main.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:58:43,951] [INFO] Client.main --> 学号为 221801307 的作业 执行  3 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:58:43,951] [INFO] Client.main --> 学号为 221801307 的作业 测评结果是：Result{src='null', result='D:\github\WTest\PersonalProject-C\221801307\output\3.txt', answer='D:\github\WTest\answers\3.txt', score=0}
+[08:58:43,952] [INFO] Client.main --> 开始执行 学号为 221801307 的作业 执行的测试用例为： 4 
+[08:58:43,952] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest\PersonalProject-C\221801307\src\main.exe 输入参数 D:\github\WTest\cases\4.txt D:\github\WTest\PersonalProject-C\221801307\output\4.txt
+[08:58:43,953] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest\PersonalProject-C\221801307\src\main.exe D:\github\WTest\cases\4.txt D:\github\WTest\PersonalProject-C\221801307\output\4.txt  Cannot run program "D:\github\WTest\PersonalProject-C\221801307\src\main.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:58:43,953] [INFO] Client.main --> 学号为 221801307 的作业 执行  4 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:58:43,953] [INFO] Client.main --> 学号为 221801307 的作业 测评结果是：Result{src='null', result='D:\github\WTest\PersonalProject-C\221801307\output\4.txt', answer='D:\github\WTest\answers\4.txt', score=0}
+[08:58:43,954] [INFO] Client.main --> 开始执行 学号为 221801307 的作业 执行的测试用例为： 5 
+[08:58:43,954] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest\PersonalProject-C\221801307\src\main.exe 输入参数 D:\github\WTest\cases\5.txt D:\github\WTest\PersonalProject-C\221801307\output\5.txt
+[08:58:43,955] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest\PersonalProject-C\221801307\src\main.exe D:\github\WTest\cases\5.txt D:\github\WTest\PersonalProject-C\221801307\output\5.txt  Cannot run program "D:\github\WTest\PersonalProject-C\221801307\src\main.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:58:43,955] [INFO] Client.main --> 学号为 221801307 的作业 执行  5 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:58:43,955] [INFO] Client.main --> 学号为 221801307 的作业 测评结果是：Result{src='null', result='D:\github\WTest\PersonalProject-C\221801307\output\5.txt', answer='D:\github\WTest\answers\5.txt', score=0}
+[08:58:43,956] [INFO] Client.main --> 开始执行 学号为 221801307 的作业 执行的测试用例为： 6 
+[08:58:43,956] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest\PersonalProject-C\221801307\src\main.exe 输入参数 D:\github\WTest\cases\6.txt D:\github\WTest\PersonalProject-C\221801307\output\6.txt
+[08:58:43,957] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest\PersonalProject-C\221801307\src\main.exe D:\github\WTest\cases\6.txt D:\github\WTest\PersonalProject-C\221801307\output\6.txt  Cannot run program "D:\github\WTest\PersonalProject-C\221801307\src\main.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:58:43,957] [INFO] Client.main --> 学号为 221801307 的作业 执行  6 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:58:43,958] [INFO] Client.main --> 学号为 221801307 的作业 测评结果是：Result{src='null', result='D:\github\WTest\PersonalProject-C\221801307\output\6.txt', answer='D:\github\WTest\answers\6.txt', score=0}
+[08:58:43,958] [INFO] Client.main --> 开始执行 学号为 221801307 的作业 执行的测试用例为： 7 
+[08:58:43,959] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest\PersonalProject-C\221801307\src\main.exe 输入参数 D:\github\WTest\cases\7.txt D:\github\WTest\PersonalProject-C\221801307\output\7.txt
+[08:58:43,959] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest\PersonalProject-C\221801307\src\main.exe D:\github\WTest\cases\7.txt D:\github\WTest\PersonalProject-C\221801307\output\7.txt  Cannot run program "D:\github\WTest\PersonalProject-C\221801307\src\main.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:58:43,959] [INFO] Client.main --> 学号为 221801307 的作业 执行  7 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:58:43,960] [INFO] Client.main --> 学号为 221801307 的作业 测评结果是：Result{src='null', result='D:\github\WTest\PersonalProject-C\221801307\output\7.txt', answer='D:\github\WTest\answers\7.txt', score=0}
+[08:58:43,961] [INFO] Client.main --> 开始执行 学号为 221801307 的作业 执行的测试用例为： 8 
+[08:58:43,961] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest\PersonalProject-C\221801307\src\main.exe 输入参数 D:\github\WTest\cases\8.txt D:\github\WTest\PersonalProject-C\221801307\output\8.txt
+[08:58:43,962] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest\PersonalProject-C\221801307\src\main.exe D:\github\WTest\cases\8.txt D:\github\WTest\PersonalProject-C\221801307\output\8.txt  Cannot run program "D:\github\WTest\PersonalProject-C\221801307\src\main.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:58:43,962] [INFO] Client.main --> 学号为 221801307 的作业 执行  8 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:58:43,962] [INFO] Client.main --> 学号为 221801307 的作业 测评结果是：Result{src='null', result='D:\github\WTest\PersonalProject-C\221801307\output\8.txt', answer='D:\github\WTest\answers\8.txt', score=0}
+[08:58:43,963] [INFO] Client.main --> 开始执行 学号为 221801307 的作业 执行的测试用例为： 9 
+[08:58:43,963] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest\PersonalProject-C\221801307\src\main.exe 输入参数 D:\github\WTest\cases\9.txt D:\github\WTest\PersonalProject-C\221801307\output\9.txt
+[08:58:43,964] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest\PersonalProject-C\221801307\src\main.exe D:\github\WTest\cases\9.txt D:\github\WTest\PersonalProject-C\221801307\output\9.txt  Cannot run program "D:\github\WTest\PersonalProject-C\221801307\src\main.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:58:43,964] [INFO] Client.main --> 学号为 221801307 的作业 执行  9 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:58:43,965] [INFO] Client.main --> 学号为 221801307 的作业 测评结果是：Result{src='null', result='D:\github\WTest\PersonalProject-C\221801307\output\9.txt', answer='D:\github\WTest\answers\9.txt', score=0}
+[08:58:43,965] [INFO] Client.main --> 开始执行 学号为 221801307 的作业 执行的测试用例为： 10 
+[08:58:43,965] [INFO] CppExecutor.exec --> 开始执行 D:\github\WTest\PersonalProject-C\221801307\src\main.exe 输入参数 D:\github\WTest\cases\10.txt D:\github\WTest\PersonalProject-C\221801307\output\10.txt
+[08:58:43,966] [ERROR] CmdUtil.cmd --> execute cmd error D:\github\WTest\PersonalProject-C\221801307\src\main.exe D:\github\WTest\cases\10.txt D:\github\WTest\PersonalProject-C\221801307\output\10.txt  Cannot run program "D:\github\WTest\PersonalProject-C\221801307\src\main.exe": CreateProcess error=2, 系统找不到指定的文件。 
+[08:58:43,966] [INFO] Client.main --> 学号为 221801307 的作业 执行  10 用例完毕， 执行时间为 -3ms 接下来开始测评...
+[08:58:43,966] [INFO] Client.main --> 学号为 221801307 的作业 测评结果是：Result{src='null', result='D:\github\WTest\PersonalProject-C\221801307\output\10.txt', answer='D:\github\WTest\answers\10.txt', score=0}
+
+
+[12:28:31,040] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 1 
+[12:28:31,041] [INFO] PythonExecutor.exec --> 开始执行 C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py 输入参数 C:\git\WordCountAutoTest\download\W-C\cases\1.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\1.txt
+[12:28:31,041] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py C:\git\WordCountAutoTest\download\W-C\cases\1.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\1.txt
+[12:28:31,197] [INFO] Client.main --> 学号为 111801429 的作业 执行  1 用例完毕， 执行时间为 156ms 接下来开始测评...
+[12:28:31,199] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\1.txt', answer='C:\git\WordCountAutoTest\download\W-C\answers\1.txt', score=8}
+[12:28:31,200] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 2 
+[12:28:31,200] [INFO] PythonExecutor.exec --> 开始执行 C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py 输入参数 C:\git\WordCountAutoTest\download\W-C\cases\2.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\2.txt
+[12:28:31,200] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py C:\git\WordCountAutoTest\download\W-C\cases\2.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\2.txt
+[12:28:31,382] [INFO] Client.main --> 学号为 111801429 的作业 执行  2 用例完毕， 执行时间为 182ms 接下来开始测评...
+[12:28:31,387] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\2.txt', answer='C:\git\WordCountAutoTest\download\W-C\answers\2.txt', score=8}
+[12:28:31,387] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 3 
+[12:28:31,388] [INFO] PythonExecutor.exec --> 开始执行 C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py 输入参数 C:\git\WordCountAutoTest\download\W-C\cases\3.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\3.txt
+[12:28:31,388] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py C:\git\WordCountAutoTest\download\W-C\cases\3.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\3.txt
+[12:28:31,590] [INFO] Client.main --> 学号为 111801429 的作业 执行  3 用例完毕， 执行时间为 202ms 接下来开始测评...
+[12:28:31,592] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\3.txt', answer='C:\git\WordCountAutoTest\download\W-C\answers\3.txt', score=8}
+[12:28:31,592] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 4 
+[12:28:31,592] [INFO] PythonExecutor.exec --> 开始执行 C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py 输入参数 C:\git\WordCountAutoTest\download\W-C\cases\4.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\4.txt
+[12:28:31,592] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py C:\git\WordCountAutoTest\download\W-C\cases\4.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\4.txt
+[12:28:31,714] [INFO] Client.main --> 学号为 111801429 的作业 执行  4 用例完毕， 执行时间为 122ms 接下来开始测评...
+[12:28:31,715] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\4.txt', answer='C:\git\WordCountAutoTest\download\W-C\answers\4.txt', score=8}
+[12:28:31,716] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 5 
+[12:28:31,716] [INFO] PythonExecutor.exec --> 开始执行 C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py 输入参数 C:\git\WordCountAutoTest\download\W-C\cases\5.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\5.txt
+[12:28:31,716] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py C:\git\WordCountAutoTest\download\W-C\cases\5.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\5.txt
+[12:28:31,906] [INFO] Client.main --> 学号为 111801429 的作业 执行  5 用例完毕， 执行时间为 190ms 接下来开始测评...
+[12:28:31,907] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\5.txt', answer='C:\git\WordCountAutoTest\download\W-C\answers\5.txt', score=8}
+[12:28:31,908] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 6 
+[12:28:31,908] [INFO] PythonExecutor.exec --> 开始执行 C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py 输入参数 C:\git\WordCountAutoTest\download\W-C\cases\6.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\6.txt
+[12:28:31,908] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py C:\git\WordCountAutoTest\download\W-C\cases\6.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\6.txt
+[12:28:32,119] [INFO] Client.main --> 学号为 111801429 的作业 执行  6 用例完毕， 执行时间为 211ms 接下来开始测评...
+[12:28:32,120] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\6.txt', answer='C:\git\WordCountAutoTest\download\W-C\answers\6.txt', score=8}
+[12:28:32,121] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 7 
+[12:28:32,121] [INFO] PythonExecutor.exec --> 开始执行 C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py 输入参数 C:\git\WordCountAutoTest\download\W-C\cases\7.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\7.txt
+[12:28:32,121] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py C:\git\WordCountAutoTest\download\W-C\cases\7.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\7.txt
+[12:28:32,198] [INFO] Client.main --> 学号为 111801429 的作业 执行  7 用例完毕， 执行时间为 77ms 接下来开始测评...
+[12:28:32,208] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\7.txt', answer='C:\git\WordCountAutoTest\download\W-C\answers\7.txt', score=8}
+[12:28:32,208] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 8 
+[12:28:32,208] [INFO] PythonExecutor.exec --> 开始执行 C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py 输入参数 C:\git\WordCountAutoTest\download\W-C\cases\8.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\8.txt
+[12:28:32,208] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py C:\git\WordCountAutoTest\download\W-C\cases\8.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\8.txt
+[12:28:32,331] [INFO] Client.main --> 学号为 111801429 的作业 执行  8 用例完毕， 执行时间为 123ms 接下来开始测评...
+[12:28:32,335] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\8.txt', answer='C:\git\WordCountAutoTest\download\W-C\answers\8.txt', score=8}
+[12:28:32,336] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 9 
+[12:28:32,336] [INFO] PythonExecutor.exec --> 开始执行 C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py 输入参数 C:\git\WordCountAutoTest\download\W-C\cases\9.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\9.txt
+[12:28:32,336] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py C:\git\WordCountAutoTest\download\W-C\cases\9.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\9.txt
+[12:28:32,541] [INFO] Client.main --> 学号为 111801429 的作业 执行  9 用例完毕， 执行时间为 205ms 接下来开始测评...
+[12:28:32,543] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\9.txt', answer='C:\git\WordCountAutoTest\download\W-C\answers\9.txt', score=8}
+[12:28:32,543] [INFO] Client.main --> 开始执行 学号为 111801429 的作业 执行的测试用例为： 10 
+[12:28:32,543] [INFO] PythonExecutor.exec --> 开始执行 C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py 输入参数 C:\git\WordCountAutoTest\download\W-C\cases\10.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\10.txt
+[12:28:32,543] [INFO] PythonExecutor.python --> begin to exec C:\Program Files\Python39\python.exe C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\src\WordCount.py C:\git\WordCountAutoTest\download\W-C\cases\10.txt C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\10.txt
+[12:28:32,787] [INFO] Client.main --> 学号为 111801429 的作业 执行  10 用例完毕， 执行时间为 244ms 接下来开始测评...
+[12:28:32,788] [INFO] Client.main --> 学号为 111801429 的作业 测评结果是：Result{src='null', result='C:\git\WordCountAutoTest\download\W-C\PersonalProject-C\111801429\output\10.txt', answer='C:\git\WordCountAutoTest\download\W-C\answers\10.txt', score=8}
